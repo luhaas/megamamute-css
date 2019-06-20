@@ -55,6 +55,12 @@
   width: 38px;
   height: 38px;
 }
+.icon-header-arrow-bottom {
+  background-image: url(/Custom/Content/Themes/#{$theme-path}/Imagens/sprite.png);
+  background-position: -330px -200px;
+  width: 10px;
+  height: 6px;
+}
 .icon-header-cart {
   background-image: url(/Custom/Content/Themes/#{$theme-path}/Imagens/sprite.png);
   background-position: 0px -199px;
@@ -63,19 +69,19 @@
 }
 .icon-header-phone {
   background-image: url(/Custom/Content/Themes/#{$theme-path}/Imagens/sprite.png);
-  background-position: -152px -177px;
+  background-position: -166px -177px;
   width: 17px;
   height: 17px;
 }
 .icon-header-question {
   background-image: url(/Custom/Content/Themes/#{$theme-path}/Imagens/sprite.png);
-  background-position: -135px -177px;
+  background-position: -183px -177px;
   width: 17px;
   height: 17px;
 }
 .icon-header-return {
   background-image: url(/Custom/Content/Themes/#{$theme-path}/Imagens/sprite.png);
-  background-position: -117px -177px;
+  background-position: -148px -177px;
   width: 18px;
   height: 17px;
 }
@@ -115,6 +121,12 @@
   width: 58px;
   height: 37px;
 }
+.icon-instagram {
+  background-image: url(/Custom/Content/Themes/#{$theme-path}/Imagens/sprite.png);
+  background-position: -197px -246px;
+  width: 23px;
+  height: 23px;
+}
 .icon-linkedin {
   background-image: url(/Custom/Content/Themes/#{$theme-path}/Imagens/sprite.png);
   background-position: -150px -246px;
@@ -129,7 +141,7 @@
 }
 .icon-menu-all {
   background-image: url(/Custom/Content/Themes/#{$theme-path}/Imagens/sprite.png);
-  background-position: -90px -177px;
+  background-position: -121px -177px;
   width: 27px;
   height: 18px;
 }
@@ -165,7 +177,7 @@
 }
 .icon-menu-tv {
   background-image: url(/Custom/Content/Themes/#{$theme-path}/Imagens/sprite.png);
-  background-position: -255px -170px;
+  background-position: -90px -177px;
   width: 31px;
   height: 22px;
 }
@@ -183,7 +195,7 @@
 }
 .icon-order-shield {
   background-image: url(/Custom/Content/Themes/#{$theme-path}/Imagens/sprite.png);
-  background-position: -197px -246px;
+  background-position: -220px -246px;
   width: 18px;
   height: 21px;
 }
@@ -207,7 +219,7 @@
 }
 .icon-product-truck {
   background-image: url(/Custom/Content/Themes/#{$theme-path}/Imagens/sprite.png);
-  background-position: -300px -269px;
+  background-position: -255px -170px;
   width: 33px;
   height: 21px;
 }
@@ -246,4 +258,10 @@
   background-position: 0px 0px;
   width: 114px;
   height: 113px;
+}
+.icon-youtube {
+  background-image: url(/Custom/Content/Themes/#{$theme-path}/Imagens/sprite.png);
+  background-position: -300px -269px;
+  width: 32px;
+  height: 22px;
 }

@@ -20,7 +20,22 @@
     border-top-right-radius: $radius;
     border-bottom-right-radius: $radius;
 }
-
+@mixin round-bottom($radius: 5px){
+  -webkit-border-bottom-left-radius: $radius;
+    -webkit-border-bottom-right-radius: $radius;
+    -moz-border-radius-bottomleft: $radius;
+    -moz-border-radius-bottomright: $radius;
+    border-bottom-left-radius: $radius;
+    border-bottom-right-radius: $radius;
+}
+@mixin round-top($radius: 5px){
+  -webkit-border-top-right-radius: $radius;
+    -webkit-border-top-left-radius: $radius;
+    -moz-border-radius-topright: $radius;
+    -moz-border-radius-topleft: $radius;
+    border-top-right-radius: $radius;
+    border-top-left-radius: $radius;
+}
 /* largura de wrapper */
 @mixin wrapper-width($width: $wrapper) {
   width: $width;
@@ -54,7 +69,7 @@
 }
 
 /* flags */
-@mixin flag($display: table,$padding: 0.3em 0.6em, $font-size:0.8em,$bg-color:$flag, $color: $font-white, $margin:0 0 3px 0, $round: 2px) {
+@mixin flag($display: table,$padding: 0.3em 0.6em, $font-size:0.8em,$bg-color:$flag, $color: $white, $margin:0 0 3px 0, $round: 2px) {
     display: $display;
     padding: $padding;
     font-size: $font-size;
@@ -93,4 +108,35 @@
     border-left: 0;
     margin: 0;
   }
+}
+
+@mixin arrow($position, $color, $size) {
+  width: 0; 
+  height: 0; 
+  @if $position == 'top' {
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;      
+    border-bottom: $size solid $color;
+  }
+  @if $position == 'down' {
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-top: $size solid $color;
+  }
+  @if $position == 'left' {
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;      
+    border-right: $size solid $color; 
+  }
+  @if $position == 'right' {
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-left: $size solid $color;
+  }
+}
+
+@mixin shadow($x, $y, $b, $opacity) {
+  -webkit-box-shadow: $x $y $b rgba(0,0,0,$opacity);
+  -moz-box-shadow: $x $y $b rgba(0,0,0,$opacity);
+  box-shadow: $x $y $b rgba(0,0,0,$opacity);
 }

@@ -227,6 +227,108 @@
                 display: block;
                 margin-bottom: 5px;
             }
+            .logo-fg {
+                width: 102px;
+                height: 26px;
+                margin: 0 auto;
+                a {
+                    background: url('/custom/content/themes/#{$theme-path}/Imagens/desc-fg.png') 0 0 no-repeat;
+                    height: 26px;
+                    float: left;
+                    width: 100%;
+                    &:hover {
+                        animation: play 2.5s infinite step-start;
+                        -o-animation: play 2.5s infinite step-start;
+                        -moz-animation: play 2.5s infinite step-start;
+                        -webkit-animation: play 2.5s infinite step-start;
+                    }
+                    img {
+                        float: right;
+                        position: relative;
+                        right: -4px;
+                    }
+                }
+            }
     	}
+    }
+}
+@-webkit-keyframes play {
+    0% {
+        background-position: 0 0; 
+    }
+    20% {
+        background-position: 0 -26px; 
+    }
+    40% {
+        background-position: 0 -52px; 
+    }
+    60% {
+        background-position: 0 -78px; 
+    }
+    80% {
+        background-position: 0 -104px; 
+    }
+    100% {
+        background-position: 0 0; 
+    } 
+}
+@-moz-keyframes play {
+    0% {
+        background-position: 0 0; 
+    }
+    20% {
+        background-position: 0 -26px; 
+    }
+    40% {
+        background-position: 0 -52px; 
+    }
+    60% {
+        background-position: 0 -78px; 
+    }
+    80% {
+        background-position: 0 -104px; 
+    }
+    100% {
+        background-position: 0 0; 
+    } 
+}
+@-o-keyframes play {
+    0% {
+        background-position: 0 0; 
+    }
+    20% {
+        background-position: 0 -26px; 
+    }
+    40% {
+        background-position: 0 -52px; 
+    }
+    60% {
+        background-position: 0 -78px; 
+    }
+    80% {
+        background-position: 0 -104px; 
+    }
+    100% {
+        background-position: 0 0; 
+    } 
+}
+@keyframes play {
+    0% {
+        background-position: 0 0; 
+    }
+    20% {
+        background-position: 0 -26px; 
+    }
+    40% {
+        background-position: 0 -52px; 
+    }
+    60% {
+        background-position: 0 -78px; 
+    }
+    80% {
+        background-position: 0 -104px; 
+    }
+    100% {
+        background-position: 0 0; 
     }
 }

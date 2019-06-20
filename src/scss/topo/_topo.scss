@@ -1,23 +1,62 @@
 header {
 	.top-bar {
-		background-color: $gray-light;
-		font-size: 0.9em;
-		padding: 10px 0;
+		background-color: $color-primary-navy;
+		padding: 0;
 	}
-	.ofertas {
-		text-align: left;
-		text-transform: uppercase;
-    	font-size: 0.9em;
-	}
-	.links {
+	.top-list {
 		text-align: right;
-	}
-
-	.ofertas, .links {
-		i {
-			margin-right: 5px;
+		.item {
+			position: relative;
+			cursor: pointer;
+			.title {
+				display: flex;
+				align-items: center;
+				color: $white;
+				padding: 0 15px;
+				margin: 15px 0;
+				i {
+					margin-right: 5px;
+				}
+				a {
+					color: $white;
+				}
+				span {
+					i {
+						margin-right: 0;
+						margin-left: 5px;
+					}
+				}
+			}
+			.dropdown {
+				display: none;
+				position: absolute;
+				width: 100%;
+				padding: 0 15px;
+				background-color: $white;
+				@include shadow(0, 3px, 6px, 0.16);
+				@include round-bottom(5px);
+				z-index: 2;
+			}
+			&.duvidas {
+				.title {
+					border-right: 1px solid $color-light-blue;
+				}
+			}
+			&.troca {
+				background-color: #2EA3CF;
+				.title {
+					font-family: $font-semibold;
+					color: $color-primary-navy;
+				}
+			}
+			&:hover {
+				.dropdown {
+					display: block;
+				}
+			}
 		}
 	}
+
 	&.flutuante {
 		.top-bar {
 			margin-bottom: 82px;
@@ -32,23 +71,52 @@ header {
 	}
 	.main-bar {
 		padding: 20px 0;
-		background: #fff;
+		background: $white;
 		&.simples {
 		    box-shadow: 1px 1px 1px 1px $gray-semilight;
 		}
-		.wd-search {
-			.input-wrapper {	
-				margin-bottom: 0;			
-				input {
-					@include round-right(0);
+		#top-search {
+			padding: 0 30px;
+			.wd-search {
+				.input-wrapper {	
+					margin-bottom: 0;	
+					margin-right: 0;
+					&:before {
+						content: '';
+						@extend .icon-search !optional;
+						position: absolute;
+						left: 15px;
+						top: 12px;
+					}		
+					input {
+						padding-left: 50px;
+						border-color: $color-primary-blue;
+						@include round(5px);
+					}
+				}
+				button {
+					display: none;
 				}
 			}
-			button {
-			    position: absolute;
-			    right: 4px;
-			    top: 0;
-			    width: auto;
-			    @include round-left(0);
+		}
+		.welcome-shopper {
+			.icon {
+				margin-right: 10px;
+			}
+			.content {
+				.text-hello {
+					font-size: 16px;
+				}
+				.actions {
+					color: $gray-dark;
+					a {
+						color: $gray-dark;
+						text-decoration: underline;
+						&:hover {
+							color: mix($gray-dark, black, 80%);
+						}
+					}
+				}
 			}
 		}
 		.wd-profile-welcome-shopper {
@@ -97,7 +165,7 @@ header {
 		    	}
 		    	.login-title {
 		    		background-color: $btn-buy;
-		    		color: $font-white;
+		    		color: $white;
 		    		margin-bottom: 10px;
 		    		@include round(2px);
 		    	}
@@ -133,10 +201,10 @@ header {
 }
 
 @media screen and (max-width: 992px) {
-	header .links {
+	header .top-list {
 		display: none;
 	}
-	.wd-profile-welcome-shopper {
+	.welcome-shopper {
 		display: none;
 	}
 	#top-search {

@@ -1,5 +1,4 @@
 .wd-widget {
-	overflow: hidden;
 	.wd-header {
 	    span.wd-icon {
 	    	display: inline-block;
@@ -14,8 +13,8 @@
 			padding: 15px;
 			margin-bottom: 10px; 
 			font-size: 2em;
-		    position: relative;
-		    border-bottom: 1px solid $gray-semilight;
+			position: relative;
+			border-bottom: 1px solid $gray-semilight;
 			.wd-icon {
 				&:before {
 					@include aws-icon("\f054");
@@ -95,7 +94,7 @@
 		    	font-size: 0.8rem;
 			    float: none;
 			    display: inline-block;
-			    background: $font-white;
+			    background: $white;
 			    color: $gray-dark;
 			    border: none;
 			    height: 32px;
@@ -111,7 +110,7 @@
 			    }
 			    &.current {
 			    	background-color: $base-color;
-			    	color: $font-white;
+			    	color: $white;
 			    }
 		    }
 		}

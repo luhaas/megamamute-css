@@ -23,7 +23,7 @@ body.EasyCheckoutStep {
    a.btn:not(.btn-outline) {
       background-color: $base-color!important;
       background-image: linear-gradient($base-color, shade($base-color, 30%));
-      color: $font-white;
+      color: $white;
       
    }
    .btn-show-basket,

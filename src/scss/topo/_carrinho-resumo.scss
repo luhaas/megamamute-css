@@ -3,25 +3,25 @@
 		b {
 			font-size: 0;
 			&:before {
-				@include aws-icon("\f07a");
-				font-size: 27px;
+				content: '';
+				display: block;
+				@extend .icon-header-cart !optional;
 				position: relative;
 				top: 4px;
 			}
 		}
 		.basket-size-wrapper {
-			background-color: $base-color-2;
-			color: $font-white;
-			width: 25px;
-			height: 25px;
+			background-color: $color-primary-blue;
+			color: $white;
+			width: 20px;
+			height: 20px;
 			position: absolute;
-		    left: 20px;
-		    bottom: -13px;
-		    font-size: 0.8em;
-		    text-align: center;
-		    line-height: 19px;
-		    border: 2px solid #fff;
-		    font-weight: bold;
+			left: 20px;
+			top: 0;
+			font-size: 0.8em;
+			font-family: $font-bold;
+			text-align: center;
+			line-height: 20px;
 			@include round(100%);	
 		}
 	}
