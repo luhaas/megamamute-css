@@ -1,22 +1,21 @@
 .btn, button {
     display: inline-block;
     position: relative;
-    padding: 1em 2em;
+    padding: 0 1em;
     cursor: pointer;
 
     background: $base-color;
-    color: $font-light;
-    font-family: $font-family;
-    font-size: 0.875rem;
-    line-height: 1em;
+    color: $font-white;
+    font-family: $font-decima-bold;
+    font-size: 18px;
+    line-height: 40px;
     font-weight: normal;
-    text-align: center;
+		text-align: center;
+		text-transform: uppercase;
 
-	outline: none;
+		outline: none;
     border: none;
-    border-bottom: none;
-    border-bottom-color: tint($base-color, 15%);
-    @include round(2px);
+    @include round(3px);
     
     -webkit-transition: all 0.18s cubic-bezier(0.11, 0.96, 0.78, 1);
     -moz-transition: all 0.18s cubic-bezier(0.11, 0.96, 0.78, 1);
@@ -24,63 +23,62 @@
 
     &:hover, &.btn-hover {
     	text-decoration: none;
-	    color: $font-light;
+	    color: $font-white;
 	    background-color: tint($base-color, 15%);
-	    border-bottom-color: $base-color;
     }
     &.btn-small {
     	padding: 0.7em 1em;
-    	font-size: 0.75rem;
+    	font-size: $font-size;
     }
 	&.btn-outline {
-		background: $font-light;
+		background: $font-white;
 		border: 1px solid $base-color;
 		color: $base-color;
 		&:active {
 			background: tint($font-dark, 60%);
-    		color: $base-color;
+    	color: $base-color;
 		}
 		&:hover {
-		    background: tint($font-dark, 90%);
-		    color: $base-color;
+			background: tint($font-dark, 90%);
+			color: $base-color;
 		}
 	}
 	&.btn-big {
 		font-size: 1.125rem;
-    	line-height: 1.2em;
+    line-height: 1.2em;
 	}
 	&.btn-huge {
 		font-size: 1.625rem;
 	}
 	&.btn-wide {
-	    width: 100%;
-	    text-align: center;
+		width: 100%;
+		text-align: center;
 	}
 	&[disabled] {
 		background-color: tint($font-dark, 70%);
-	    font-weight: 500;
-	    color: tint($font-dark, 40%);
-	    border-bottom-color: tint($font-dark, 10%);
-	    cursor: wait;
+		font-weight: 500;
+		color: tint($font-dark, 40%);
+		border-bottom-color: tint($font-dark, 10%);
+		cursor: wait;
 	}
 	&.btn-buy {
 		background-color: $btn-buy;
-    	&:before {
-    		@include aws-icon("\f07a");
-    		font-size:0.8em;
-    		padding-right: 5px;
-    	}
-    	&:active {
+		&:before {
+			@include aws-icon("\f07a");
+			font-size:0.8em;
+			padding-right: 5px;
+		}
+		&:active {
 			background: tint($btn-buy, 20%);
 		}
 		&:hover {
-		    background: tint($btn-buy, 10%);
+		  background: tint($btn-buy, 10%);
 		}
 		small {
 			display: block;
-		    font-size: 0.6em;
-		    opacity: .8;
-		    line-height: 1.5em;
+			font-size: 0.6em;
+			opacity: .8;
+			line-height: 1.5em;
 		}
 	}
 	&.bt-notifyme {		

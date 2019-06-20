@@ -14,7 +14,7 @@
 			position: relative;
 			height: 100%;
 			text-align: center;
-			color: $font-light;
+			color: $font-white;
      		padding: 0.66em 1.5em;
      		width: 100%;
      		box-sizing: border-box;
@@ -109,7 +109,7 @@
 					padding: 0;
 					margin: 0;
 					a {
-						color: $font-light;
+						color: $font-white;
 						padding: 1.06em 1.4em;
 						display: block;
 						text-decoration: none;
@@ -121,7 +121,7 @@
 					width: 1px;
 					height: 12px;
 					display: inline-block;
-					background-color: $font-light;	
+					background-color: $font-white;	
 					}			
 				}
 				&:hover {
@@ -131,7 +131,7 @@
 						position: absolute;
 						border: 1px solid $gray-light;
 						border-top: 0;
-						background-color:$font-light;
+						background-color:$font-white;
 						z-index: 55;
 						padding: 20px 30px;
 						min-width: 100px;
@@ -166,7 +166,7 @@
 	    float: right;
 	    text-align: center;
 	    text-transform: uppercase;
-	    color: $font-light;
+	    color: $font-white;
 	    line-height: 46px;
 	    cursor: pointer;
 	    flex: auto;

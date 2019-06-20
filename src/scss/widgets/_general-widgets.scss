@@ -95,7 +95,7 @@
 		    	font-size: 0.8rem;
 			    float: none;
 			    display: inline-block;
-			    background: $font-light;
+			    background: $font-white;
 			    color: $gray-dark;
 			    border: none;
 			    height: 32px;
@@ -111,7 +111,7 @@
 			    }
 			    &.current {
 			    	background-color: $base-color;
-			    	color: $font-light;
+			    	color: $font-white;
 			    }
 		    }
 		}

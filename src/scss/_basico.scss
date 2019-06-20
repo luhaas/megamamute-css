@@ -195,17 +195,18 @@ body {
 		}
 	}
 	#logo {
+		padding: 0;
 		h1 {
 			margin: 0;
 		}
 		a {
-		    background-image: url(/custom/content/themes/#{$theme-path}/Imagens/logo.png);
-		    background-repeat: no-repeat;
-		    display: block;
-		    width: 170px;
-		    height: 40px;
-		    font-size: 0;
-		    margin: 0 auto;
+			background-image: url('/custom/content/themes/#{$theme-path}/Imagens/logo.png?43');
+			background-repeat: no-repeat;
+			display: block;
+			width: 202px;
+			height: 84px;
+			font-size: 0;
+			margin: 0 auto;
 		}
 	}
 	#overlay {

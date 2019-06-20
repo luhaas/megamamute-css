@@ -1,5 +1,196 @@
+/* Exo2 */
 @font-face {
-    font-family: 'Lato', sans-serif;
-    src: url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/Lato-Regular.woff2') format("woff2"), url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/Lato-Regular.woff') format("woff");
+    font-family: 'exo_2_blackregular';
+    src: url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/Exo2/exo2-black-webfont.woff2') format('woff2'),
+         url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/Exo2/exo2-black-webfont.woff') format('woff');
     font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'exo_2bold';
+    src: url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/Exo2/exo2-bold-webfont.woff2') format('woff2'),
+         url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/Exo2/exo2-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'exo_2_extra_boldregular';
+    src: url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/Exo2/exo2-extrabold-webfont.woff2') format('woff2'),
+         url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/Exo2/exo2-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'exo_2_extra_lightregular';
+    src: url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/Exo2/exo2-extralight-webfont.woff2') format('woff2'),
+         url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/Exo2/exo2-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'exo_2italic';
+    src: url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/Exo2/exo2-italic-webfont.woff2') format('woff2'),
+         url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/Exo2/exo2-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'exo_2_lightregular';
+    src: url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/Exo2/exo2-light-webfont.woff2') format('woff2'),
+         url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/Exo2/exo2-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'exo_2_mediumregular';
+    src: url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/Exo2/exo2-medium-webfont.woff2') format('woff2'),
+         url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/Exo2/exo2-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'exo_2regular';
+    src: url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/Exo2/exo2-regular-webfont.woff2') format('woff2'),
+         url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/Exo2/exo2-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'exo_2_semi_boldregular';
+    src: url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/Exo2/exo2-semibold-webfont.woff2') format('woff2'),
+         url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/Exo2/exo2-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'exo_2_thinregular';
+    src: url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/Exo2/exo2-thin-webfont.woff2') format('woff2'),
+         url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/Exo2/exo2-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Tofino Personal */
+@font-face {
+    font-family: 'tofino_personalblack';
+    src: url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/TofinoPersonal/tofinopersonal-black-webfont.woff2') format('woff2'),
+         url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/TofinoPersonal/tofinopersonal-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'tofino_personalbold';
+    src: url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/TofinoPersonal/tofinopersonal-bold-webfont.woff2') format('woff2'),
+         url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/TofinoPersonal/tofinopersonal-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'tofino_personalbook';
+    src: url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/TofinoPersonal/tofinopersonal-book-webfont.woff2') format('woff2'),
+         url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/TofinoPersonal/tofinopersonal-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'tofino_personallight';
+    src: url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/TofinoPersonal/tofinopersonal-light-webfont.woff2') format('woff2'),
+         url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/TofinoPersonal/tofinopersonal-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'tofino_personalmedium';
+    src: url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/TofinoPersonal/tofinopersonal-medium-webfont.woff2') format('woff2'),
+         url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/TofinoPersonal/tofinopersonal-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'tofino_personalregular';
+    src: url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/TofinoPersonal/tofinopersonal-regular-webfont.woff2') format('woff2'),
+         url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/TofinoPersonal/tofinopersonal-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'tofino_personalitalic';
+    src: url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/TofinoPersonal/tofinopersonal-regularitalic-webfont.woff2') format('woff2'),
+         url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/TofinoPersonal/tofinopersonal-regularitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Decima Nova */
+@font-face {
+font-family: 'DecimaNova Heavy';
+font-style: normal;
+font-weight: normal;
+src: url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/DecimaNova/Decima Nova Heavy.woff') format('woff');
+}
+
+@font-face {
+font-family: 'DecimaNova Italic';
+font-style: normal;
+font-weight: normal;
+src: url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/DecimaNova/Decima Nova Italic.woff') format('woff');
+}
+
+@font-face {
+font-family: 'DecimaNova Light';
+font-style: normal;
+font-weight: normal;
+src: url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/DecimaNova/Decima Nova Light.woff') format('woff');
+}
+
+@font-face {
+font-family: 'DecimaNova Regular';
+font-style: normal;
+font-weight: normal;
+src: url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/DecimaNova/Decima Nova.woff') format('woff');
+}
+
+@font-face {
+font-family: 'DecimaNova Bold';
+font-style: normal;
+font-weight: normal;
+src: url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/DecimaNova/Decima Nova Bold.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Decima Bold';
+font-style: normal;
+font-weight: normal;
+src: url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/DecimaNova/Decima Bold.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Decima Light';
+font-style: normal;
+font-weight: normal;
+src: url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/DecimaNova/Decima Light.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Decima Regular';
+font-style: normal;
+font-weight: normal;
+src: url('http://www.megamamute.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/DecimaNova/Decima.woff') format('woff');
 }

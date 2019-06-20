@@ -54,7 +54,7 @@
 }
 
 /* flags */
-@mixin flag($display: table,$padding: 0.3em 0.6em, $font-size:0.8em,$bg-color:$flag, $color: $font-light, $margin:0 0 3px 0, $round: 2px) {
+@mixin flag($display: table,$padding: 0.3em 0.6em, $font-size:0.8em,$bg-color:$flag, $color: $font-white, $margin:0 0 3px 0, $round: 2px) {
     display: $display;
     padding: $padding;
     font-size: $font-size;
