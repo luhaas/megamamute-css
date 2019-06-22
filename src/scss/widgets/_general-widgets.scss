@@ -67,77 +67,53 @@
 
 /* banners */
 .wd-marketing-banner{
-	@include grid-media($grid-smartphone){
-		height: auto !important;
-		line-height: normal !important;
-		max-width: 100%;
-	}
-
+	max-width: 100%;
 	.banner-wrapper, a {
-		@include grid-media($grid-smartphone){
-			max-width: 100%; 
-			height: auto !important;
+		max-width: 100%;
+		img {
+			width: 100%;
+			height: auto;
 		}
 	}
 	&.slider {
+		line-height: normal !important;
+		height: auto !important;
+		.banner-wrapper, a {
+			max-width: 100%; 
+			height: auto !important;
+		}
 		.slider-controller {
-			position: absolute;
-			right: 0;
-		    left: 0;
-		    bottom: 0;
-		    display: block;
-		    margin: 0;
-		    padding: 0.5em 2em;
-		    line-height: normal;
-		    text-align: center;
-		    li {
-		    	font-size: 0.8rem;
-			    float: none;
-			    display: inline-block;
-			    background: $white;
-			    color: $gray-dark;
-			    border: none;
-			    height: 32px;
-			    line-height: 32px;
-			    width: 32px;
-			    border-radius: 100%;
-			    font-weight: 700;
-			    box-shadow: none;
-			    @include grid-media($grid-smartphone) {
-			    	height: 20px;
-				    line-height: 20px;
-				    width: 20px;
-			    }
-			    &.current {
-			    	background-color: $base-color;
-			    	color: $white;
-			    }
-		    }
-		}
-	}
-	&:not(.menu-oferta) {
-		
-	img {
-		max-width: 100%;
-		height: auto;
-		@include grid-media($grid-smartphone){
-			width: 100%;
-		}
-	}
-	}
-	&.grid {
-		padding: 0;
-		float: left;
-		margin-bottom: 20px;
-		@include grid-media($grid-m){
-			max-width: 100%;
-			div {
-				text-align:center;
+			position: initial;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 0;
+			line-height: normal;
+			li {
+				font-size: 0 !important;
+				background: transparent;
+				border: 1px solid $color-primary-blue;
+				width: 11px !important;
+				height: 11px !important;
+				margin: 10px 5px !important;
+				@include round(1px);
+				box-shadow: none;
+				&.current {
+					background: $color-primary-orange;
+					border-color: $color-primary-orange;
+				}
 			}
 		}
-		
-		&:nth-child(2n) {
-			float: right;
+		.nav-control a {
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 40px;
+			transform: translate(0, -50%);
+			&.next {
+				left: initial;
+				right: 40px;
+			}
 		}
 	}
 }

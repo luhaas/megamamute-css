@@ -1,73 +1,117 @@
-.wrapper {
-	.banner-news-middle {
-		overflow: hidden;
-		margin: 50px 0;
-		> div {
-			float:left;
-			&:first-child {
-				padding:0;
+.HomeRoute {
+	.mosaico-banners {
+		padding: 60px 0;
+		background-image: url('/Custom/Content/Themes/#{$theme-path}/Imagens/mosaico-bg.png');
+		background-repeat: no-repeat;
+	}
+	.newsletter {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 70px 0;
+		h2 {
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 36px;
+			font-family: $font-decima;
+			p {
+				font-family: $font-decima-heavy;
+				margin-bottom: 0;
 			}
-			&:last-child {
-				float:right;
+		}
+		.wd-marketing-newsletter {
+			max-width: 730px;
+			.wd-header, label, p {
+				display: none;
 			}
-			.wd-marketing-newsletter {
-				.wd-header {
-					width: 45%;
-					@include grid-media($grid-pp){
-						width: 100%;
-					}
-					.wd-icon {
-						&:before {
-							@include aws-icon("\f0e0");
-							font-size: 3em;
-							margin-right: 10px;
-						}
-					}
-					.wd-title {
-						font-size: 1.4em;
-						small {
-							display: block;
-							font-size: 0.66em;
-							font-weight: normal;
-						}
-					}				
-				}
-				.wd-header, .wd-content {
-					float: left;
-					padding: 12px 0;
-				}
-				.wd-content {
-					width: 55%;
-					@include grid-media($grid-pp){
-						width: 100%;
-					}
-					form {
-						margin: 0;
-					}
-					.input-name-marketing-newsletter, label, .form-wrapper > p {
-						display: none;
-					}
-					.input-email-marketing-newsletter {
-						width: 65%;
-						input {
-							@include round-right(0);
-						}
-					}
-					.input-button-marketing-newsletter {
-						width: 35%;
-						button {
-							@extend .btn-wide;
-							@include round-left(0);
-						}
-					}
-					.input-email-marketing-newsletter,
-					.input-button-marketing-newsletter {
-						float: left;
-					}
+			form {
+				margin: 0;
+			}
+			.form-wrapper {
+				display: flex;
+			}
+			input {
+				width: 240px;
+				height: 48px;
+				margin-right: 15px;
+			}
+			.input-button-marketing-newsletter {
+				button {
+					line-height: 48px;
+					@extend .btn-navy !optional;
 				}
 			}
 		}
 	}
+	// .banner-news-middle {
+	// 	overflow: hidden;
+	// 	margin: 50px 0;
+	// 	> div {
+	// 		float:left;
+	// 		&:first-child {
+	// 			padding:0;
+	// 		}
+	// 		&:last-child {
+	// 			float:right;
+	// 		}
+	// 		.wd-marketing-newsletter {
+	// 			.wd-header {
+	// 				width: 45%;
+	// 				@include grid-media($grid-pp){
+	// 					width: 100%;
+	// 				}
+	// 				.wd-icon {
+	// 					&:before {
+	// 						@include aws-icon("\f0e0");
+	// 						font-size: 3em;
+	// 						margin-right: 10px;
+	// 					}
+	// 				}
+	// 				.wd-title {
+	// 					font-size: 1.4em;
+	// 					small {
+	// 						display: block;
+	// 						font-size: 0.66em;
+	// 						font-weight: normal;
+	// 					}
+	// 				}				
+	// 			}
+	// 			.wd-header, .wd-content {
+	// 				float: left;
+	// 				padding: 12px 0;
+	// 			}
+	// 			.wd-content {
+	// 				width: 55%;
+	// 				@include grid-media($grid-pp){
+	// 					width: 100%;
+	// 				}
+	// 				form {
+	// 					margin: 0;
+	// 				}
+	// 				.input-name-marketing-newsletter, label, .form-wrapper > p {
+	// 					display: none;
+	// 				}
+	// 				.input-email-marketing-newsletter {
+	// 					width: 65%;
+	// 					input {
+	// 						@include round-right(0);
+	// 					}
+	// 				}
+	// 				.input-button-marketing-newsletter {
+	// 					width: 35%;
+	// 					button {
+	// 						@extend .btn-wide;
+	// 						@include round-left(0);
+	// 					}
+	// 				}
+	// 				.input-email-marketing-newsletter,
+	// 				.input-button-marketing-newsletter {
+	// 					float: left;
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// }
 	> div {
 		clear: both;
 	}

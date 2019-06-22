@@ -1,209 +1,218 @@
-#footer {
+#footer {    
+    background: $white;
 	> .wrapper {
 		> div {
 	    	padding: 50px 0;
-	    	border-bottom: 1px solid $gray-medium;
+	    	border-bottom: 1px solid $gray-semilight;
 	    	overflow: hidden;
-	    	&:last-child {
-	    		border-bottom: 0;
-	    	}
 	    }
 	}
-    border-top: 2px solid #dfdfdf;
-    background: #f6f6f6;
     h2 {
-    	text-align: center;
-        padding: 0 15px;
+        font-family: $font-decima-heavy;
+        color: $color-primary-orange;
+        font-size: 18px;
+        text-transform: uppercase;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    a {
+        color: $color-primary-navy;
+    }
+    .footer-categories {
+        background-image: linear-gradient($color-primary-blue, #213865);
+        .wd-category-menu {
+            .section {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                grid-gap: 30px;
+                padding: 50px 40px;
+                li {
+                    h3 {
+                        > a, > a:hover {
+                            color: $white;
+                            font-family: $font-decima-heavy;
+                            font-size: 18px;
+                            font-weight: 400;
+                            text-transform: uppercase;
+                        }
+                    }
+                    h4 {
+                        > a {
+                            color: #81C9E3;
+                            font-size: 14px;
+                            font-weight: 400;
+                            &:hover:not([title="ver mais"]) {
+                                color: $white;
+                                text-decoration: none;
+                                padding-left: 5px;
+                                &:before {
+                                    content: '';
+                                    @extend .icon !optional;
+                                    @extend .icon-arrow-right-white !optional;
+                                    margin-right: 5px;
+                                }
+                            }
+                            &[title="ver mais"], &[title="ver mais"]:hover {
+                                font-family: $font-decima-bold;
+                                color: $color-primary-yellow;
+                                text-transform: uppercase;
+                                padding-bottom: 3px;
+                                border-bottom: 1px solid $color-primary-yellow;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     .footer-newsletter {
-    	text-align: center;
-    	.wd-marketing-newsletter {
-    		max-width: 500px;
-    		margin: 0 auto;
-            .wd-header, .input-name-marketing-newsletter, label, p {
+        padding: 30px 0;
+        text-align: center;
+        background-image: linear-gradient($color-primary-yellow, $color-primary-orange);
+        h2 {
+            font-size: 30px;
+            color: $white;
+            text-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+            margin: 0;
+        }
+        .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    	.wd-marketing-newsletter.wd-widget-js {
+            .wd-header, label, p {
                 display: none;
             }
-    		.input-email-marketing-newsletter {
-				width: 79%;
-				float: left;
-                @include grid-media($grid-smartphone) {
-                    width: 70%;
-                }
-                input {
-                    @include round-right(0);
-                }
-			}
-			.input-button-marketing-newsletter {
-				float: left;
-				width: 21%;
-                @include grid-media($grid-smartphone) {
-                    width: 30%;
-                }
-				button {
-                    @extend .btn-wide;
-                    @include round-left(0);
-				}
-			}
-    	}
-    }
-    .footer-atendimento {
-    	.contato {
-	    	max-width: 740px;
-	    	margin: 0 auto;
-    		padding: 30px 0 15px 0;
-    		overflow: hidden;
-            > div {
-                @include grid-media($grid-smartphone) {
-                    text-align: center;
-                    margin: 15px 0;
+            form {
+                margin: 0;
+            }
+            .form-wrapper {
+                display: flex;
+            }
+            .input-wrapper {
+                margin: 0;
+            }
+            input {
+                width: 240px;
+                height: 48px;
+                margin-right: 20px;
+                border-width: 0;
+                @include shadow(0, 3px, 6px, 0.16);
+                &.error {
+                    border-width: 1px;
                 }
             }
-    		i {
-    			float: left;
-			    font-size: 44px;
-			    margin-right: 18px;
-                @include grid-media($grid-pp) {
-                    display: none
-                }
-    		}
-    		strong {
-    			display: block;
-    			margin: 3px 0 5px 0;
-    		}
-    		a:not(.btn) {
-    			font-size: 1.3em;
-    		}
-    		.phone {
-    			a {
-    				color: $font-dark;
-    			}
-    		}
-    	}
-    	.horario {
-    		color: $gray-dark;
-    		text-align: center;
+			.input-button-marketing-newsletter {
+				button {
+                    line-height: 48px;
+                    @extend .btn-green !optional;
+                    @include shadow(0, 3px, 6px, 0.16);
+				}
+            }
+            .message {
+                color: $white;
+            }
     	}
     }
-    .footer-category {        
-        h2 {
-            text-align: left;
-            padding: 0;
+    .wrapper {
+        .aboutme {
+            padding-bottom: 30px;
+            p {
+                margin-bottom: 25px;
+                line-height: 22px;
+            }
+            .footer-social {
+                width: 100%;
+                .icons {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    a {
+                        padding: 0 25px;
+                    }
+                }
+            }
         }
-    	.cms-page-menu {
-    		float:right;
-            .cms-page {
-                &.active {
+        .footer-pages {        
+            h2 {
+                text-align: left;
+                padding: 0;
+            }
+            big {
+                font-size: 20px;
+            }
+            .cms-page-menu {
+                float:right;
+                .cms-page {
+                    &.active {
+                        small {
+                            @include grid-media($grid-smartphone) {
+                                &::after {
+                                    @include aws-icon("\f106");
+                                }
+                            }
+                        }
+                        .wd-page-menu {
+                            > ul {
+                                display: block;
+                            }
+                        }
+                    }
                     small {
                         @include grid-media($grid-smartphone) {
                             &::after {
-                                @include aws-icon("\f106");
+                                @include aws-icon("\f107");
+                                float: right;
                             }
                         }
                     }
                     .wd-page-menu {
                         > ul {
-                            display: block;
-                        }
-                    }
-                }
-                small {
-                    @include grid-media($grid-smartphone) {
-                        &::after {
-                            @include aws-icon("\f107");
-                            float: right;
-                        }
-                    }
-                }
-                .wd-page-menu {
-                    > ul {
-                        padding-bottom: 15px;                    
-                        @include grid-media($grid-smartphone) {
-                            display: none;
-                        }
-                        li {                        
-                            margin: 0;
-                            margin-top: 15px;
-                            a {
-                                font-size: 0.9em;
+                            padding-bottom: 15px;                    
+                            @include grid-media($grid-smartphone) {
+                                display: none;
+                            }
+                            li {                        
+                                margin: 0;
+                                margin-top: 15px;
+                                a {
+                                    font-size: 0.9em;
+                                }
                             }
                         }
                     }
                 }
-    		}
-    	}
-    }
-    .footer-social {
-        * {
-            text-align: center;
+            }
         }
-    	.box {
-    		max-width: 450px;
-    		margin: 0 auto;
-    		overflow: hidden;
-    	}
-    	.icons {
-    		a {
-    			padding: 1.3em 0.8em;
-                display: inline-block;
-    		}
-    		i {
-    			font-size: 30px;
-    		}
-    	}
-    }
-    .certificados, .assinatura {
-    	background-color: #fff;
-    	color: $gray-dark;
     }
     .certificados {
-    	border-top: 1px solid $gray-medium;
-    	padding: 30px 0;
-        &.simples {
-            border-top: 0;
-        }
-        .col {
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-        .title, .shields {
-            float: left;
-        }
-        .title {
-            margin-right: 10px;
-        }
-        .shields {
-            > a {
-                float: left;
-                margin: 5px 10px;
-                &.shield-letsencrypt {
-                    width: 77px;
-                    height: 63px;
-                    background-image: url(/custom/content/themes/#{$theme-path}/Imagens/lets-encrypt.png);
-                }
+    	padding: 50px 0;
+        .pagamento {
+            .shields {
+                display: grid;
+                grid-template-columns: 58px 58px 58px 58px;
+                grid-gap: 10px;
             }
-            .payment {
-                width: 32px;
-                height: 20px;
-                margin: 5px;                
-                float: left;
-                background-color: #FFF;                
-                background-repeat: no-repeat;
-                &.payment-pay-amex {
-                    background-image: url(/custom/content/themes/#{$theme-path}/Imagens/pay-amex.png);
-                }
-                &.payment-pay-code {
-                    background-image: url(/custom/content/themes/#{$theme-path}/Imagens/pay-code.png);
-                }
-                &.payment-pay-master {
-                    background-image: url(/custom/content/themes/#{$theme-path}/Imagens/pay-master.png);
-                }
-                &.payment-pay-visa {
-                    background-image: url(/custom/content/themes/#{$theme-path}/Imagens/pay-visa.png);
+        }
+        .seguranca {
+            .shields {
+                > a {
+                    float: left;
+                    margin: 5px 10px;
+                    &.shield-letsencrypt {
+                        width: 77px;
+                        height: 63px;
+                        background-image: url(/custom/content/themes/#{$theme-path}/Imagens/lets-encrypt.png);
+                    }
                 }
             }
         }
     }
     .assinatura {
+        background-color: $gray-extralight;
+        color: $gray-dark;
     	.wrapper {
     		> .row {
     			border-bottom: 1px solid $gray-light;
@@ -212,20 +221,16 @@
 	    		overflow: hidden;
     		}
     	}
-        .aboutme {
-            p {
-                margin: 0;
-            }
-        }
-    	.copyright, .creators {
-    		text-align: center;
-    	}
     	.creators {
-    		padding-top: 20px;
-    		overflow: hidden;
+            overflow: hidden;            
+    		text-align: center;
             small {
                 display: block;
                 margin-bottom: 5px;
+                &.absolute {
+                    position: absolute;
+                    width: 65%;
+                }
             }
             .logo-fg {
                 width: 102px;
