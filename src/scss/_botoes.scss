@@ -94,6 +94,24 @@
 		    background: tint($gray-dark, 20%);
 		}
 	}
+	&.btn-green {
+		background-color: $color-green;
+		&:active {
+			background: tint($color-green, 20%);
+		}
+		&:hover {
+		  background: tint($color-green, 10%);
+		}
+	}
+	&.btn-navy {
+		background-color: $color-primary-navy;
+		&:active {
+			background: tint($color-primary-navy, 20%);
+		}
+		&:hover {
+		  background: tint($color-primary-navy, 10%);
+		}
+	}
 	&.btn-remove {
 	    padding: 0;
 	    background: transparent;

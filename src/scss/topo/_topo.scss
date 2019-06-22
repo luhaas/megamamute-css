@@ -186,15 +186,17 @@ header {
 		    	}
 			}
 		}
-
-		.main-wishlist {
-			font-size: 30px;
-			text-align: center;
-			a {
-				color: $base-color-2;
-				&:hover {
-					color: darken( $base-color-2, 10% );
-				}
+	}
+	.condicoes-gerais {
+		margin-top: 20px;
+		> div {
+			display: flex;
+			align-items: center;
+			i {
+				margin-right: 15px;
+			}
+			span {
+				max-width: 135px;
 			}
 		}
 	}

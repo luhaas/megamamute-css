@@ -68,7 +68,6 @@ body {
 			display: inline-block;
 		    margin-bottom: 5px;
 		    margin-top: 9px;
-		    font-weight: bold;
 		    vertical-align: top;
 		    font-size: 0.97em;
 		}
@@ -127,7 +126,6 @@ body {
 		display: block;
 		margin-bottom: 15px;
    		margin-top: 10px;
-   		font-weight: bold;
    		small {
 			font-weight: normal;
 			display: block;
@@ -263,4 +261,9 @@ body {
 	.no-desktop {
 		display: none !important;
 	}
+}
+
+/* color classes */
+.color-primary-orange {
+	color: $color-primary-orange !important;
 }
