@@ -1,8 +1,8 @@
 .wd-product-price-description {
-	margin: 10px 0;
+	text-align: center;
 	.list-price {
-		color: $gray-dark;
-		font-size: 0.9em;
+		color: $gray-medium;
+		font-size: $font-size;
 		.prefix {
 
 		}
@@ -11,44 +11,40 @@
 		}
 		&.variation {
 			color: $font-dark;
+			font-size: 16px;
 			span {
-				font-weight: bold;
-				font-size: 1.6em;
-				color: $base-color;
+				font-family: $font-bold;
 			}
 		}
 	}
 	.sale-price {
+		color: $font-dark;
+		font-size: 16px;
 		.prefix {
-			font-size: 1em;
+			font-family: $font-regular;
 		}
 		span {
-			font-weight: bold;
-			font-size: 1.4em;
-			color: $base-color;
+			font-family: $font-bold;
 		}
 	}
 	.condition {
-		font-size: 1em;
-		line-height: 1.3em;
-		.label {
-
-		}
+		font-size: 16px;
 		.parcels, .parcel-value {
-			font-weight: bold;
+			font-family: $font-bold;
 		}
 	}
 	.savings {
-		font-size: 1em;
+		color: #787878;
 		.discount {
-			font-weight: bold;
+			font-size: 28px;
+			font-family: $font-bold;
 			color: $price-off;
 		}
 	}
 }
 .wd-product-line {
 	.wd-product-price-description {
-     	height: 75px;
+     	height: 120px;
 	}
 }
 .product-detail .head {

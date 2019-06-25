@@ -1,8 +1,10 @@
 .wd-product-list {
 	.wd-content {
 		> ul  {
-			li {
-				width: auto;
+			li {				
+				width: 260px;
+				margin: 15px;
+				margin-bottom: 35px;
 				padding: 0;
 			}
 		}
@@ -13,8 +15,9 @@
 		.wd-product-list {
 			height: auto;
 			li {
-				@include calculate($wrapper,$qtd-products-vitrine);
-				margin: 0;
+				width: 260px;
+				margin: 15px;
+				margin-bottom: 35px;
 			}
 		}
 	}
@@ -34,7 +37,6 @@
 			
 			.medias, .item-description {
 				@include grid-column(6);
-				margin: 0;
 			}
 		}
 	}

@@ -3,6 +3,12 @@
 		padding: 60px 0;
 		background-image: url('/Custom/Content/Themes/#{$theme-path}/Imagens/mosaico-bg.png');
 		background-repeat: no-repeat;
+		.row:first-child {
+			padding-bottom: 25px;
+		}
+		img {
+			@include shadow(0, 3px, 6px, 0.16);
+		}
 	}
 	.newsletter {
 		flex-direction: column;

@@ -10,16 +10,39 @@
 	&.wd-browsing-product-carousel, &.wd-product-list, &.wd-product-featured-list {
 		margin-top: 30px;
 		.wd-header {
-			padding: 15px;
-			margin-bottom: 10px; 
-			font-size: 2em;
+			margin-bottom: 10px;
 			position: relative;
-			border-bottom: 1px solid $gray-semilight;
-			.wd-icon {
-				&:before {
-					@include aws-icon("\f054");
-				    font-size: 0.8em;
-				    color: $base-color;
+			.wd-title {
+				font-family: $font-decima;
+				font-size: 36px;
+				text-transform: uppercase;
+				span {
+					font-family: $font-decima-heavy;
+					color: $color-primary-orange;
+				}
+				&:after {
+					content: '';
+
+				}
+			}
+			.wd-more {
+				float: right;
+				font-family: $font-decima-bold;
+				text-transform: uppercase;
+				font-size: 18px;
+				color: $white;
+				background-color: $color-primary-orange; 
+				padding: 5px 10px;
+				@include round();
+				.wd-icon {
+					float: right;
+					line-height: 18px;
+					&:after {
+						@include aws-icon("\f054");
+						font-size: 11px;
+						color: $white;
+						margin-left: 5px;
+					}
 				}
 			}
 		}
