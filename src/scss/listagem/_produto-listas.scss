@@ -16,21 +16,22 @@
 			height: auto;
 			li {
 				width: 260px;
-				margin: 15px;
-				margin-bottom: 35px;
+				margin: 15px 0 35px 30px;
 			}
 		}
 	}
 	.jcarousel-control-next, .jcarousel-control-prev {
 		background: transparent;
+    top: 50%;
+    transform: translateY(-50%);
 		i {
-			font-size: 1em;
+			font-size: 30px;
 		}
 	}
 }
 .wd-product-list-contextual {
 	.wd-product-list {
-		li{
+		li {
 			min-height: 350px;
 			height: 360px;
 			width: auto;
