@@ -1,4 +1,17 @@
 .HomeRoute {
+	#middle {
+		h2 {
+			width: 100%;
+			font-family: $font-decima;
+			text-transform: uppercase;
+			text-align: center;
+			font-size: 36px;
+			span, p {
+				font-family: $font-decima-heavy;
+				margin-bottom: 0;
+			}
+		}
+	}
 	.mosaico-banners {
 		padding: 60px 0;
 		background-image: url('/Custom/Content/Themes/#{$theme-path}/Imagens/mosaico-bg.png');
@@ -15,16 +28,6 @@
 		align-items: center;
 		justify-content: center;
 		padding: 70px 0;
-		h2 {
-			text-align: center;
-			text-transform: uppercase;
-			font-size: 36px;
-			font-family: $font-decima;
-			p {
-				font-family: $font-decima-heavy;
-				margin-bottom: 0;
-			}
-		}
 		.wd-marketing-newsletter {
 			max-width: 730px;
 			.wd-header, label, p {
@@ -77,6 +80,123 @@
 			.jcarousel-control-next, .jcarousel-control-prev {
 				i {
 					color: $white;
+				}
+			}
+		}
+	}
+	.category-carousel {
+		padding: 50px 0;
+		background-color: $gray-extralight;
+		.wd-marketing-banner {
+			position: relative;
+			overflow: hidden;
+			padding: 0 20px 30px;
+			.banners-list {
+				width: 2000em;
+			}
+			.banner-wrapper, 
+			a {
+				width: auto;
+				position: relative;
+				img {
+					width: auto;
+					background-color: $white;
+					border-radius: 100%;
+					border: 1px solid #D4D4D4;
+				}
+				.banner-name {
+					position: absolute;
+					bottom: -15px;
+					left: 50%;
+					transform: translateX(-50%);
+					font-family: $font-bold;
+					font-size: 18px;
+					color: $white;
+					padding: 5px 25px;
+					background-image: linear-gradient(#BEBEBE, #858585);
+					@include round();
+					@include shadow(0, 3px, 6px, 0.16);
+				}
+				&:hover {
+					img {
+						@include shadow(0, 3px, 10px, 0.16);						
+					}
+					.banner-name {						
+						background-image: linear-gradient($color-primary-yellow, $color-primary-orange);
+					}
+				}
+			}
+			.banner-wrapper {
+				float: left;
+				margin: 0 10px;
+			}
+			.jcarousel-control-next, .jcarousel-control-prev {
+				background: transparent;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				i {
+					font-size: 30px;
+				}
+			}
+			.jcarousel-control-prev {
+				left: 0;
+			}
+			.jcarousel-control-next {
+				right: 0;
+			}
+		}
+	}
+	.novidades {
+		padding: 70px 0;
+		h2 {
+			font-size: 40px;
+		}
+		.produto-detaque {
+			border: 2px solid $color-primary-blue;
+			@include round();
+			.wd-title {
+				text-align: center;
+				font-size: 30px;
+				font-family: $font-decima;
+				color: $color-primary-blue;
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+				big {
+					font-size: 52px;
+					font-family: $font-decima-heavy;
+				}
+				&:before {
+					content: '';
+					@extend .icon;
+					margin-bottom: 20px;
+				}
+			}
+			&.laptop {
+				.wd-title {
+					&:before {
+						@extend .icon-vitrine-laptop;
+					}
+				}
+			}
+			&.home {
+				border-color: $color-primary-orange;
+				.wd-title {
+					color: $color-primary-orange;
+					&:before {
+						@extend .icon-vitrine-home;
+					}
+				}
+			}
+			.wd-product-list .wd-product-list li {
+				width: 520px;
+				.wd-product-line {
+					display: flex;
+					.item-head {
+						border-bottom: 0;
+						border-right: 1px solid #D9D9D9;
+					}
 				}
 			}
 		}
