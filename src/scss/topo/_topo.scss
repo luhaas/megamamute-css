@@ -31,11 +31,27 @@ header {
 				display: none;
 				position: absolute;
 				width: 100%;
-				padding: 0 15px;
+				padding: 15px 25px;
 				background-color: $white;
+				text-align: left;
+				font-size: 15px;
 				@include shadow(0, 3px, 6px, 0.16);
 				@include round-bottom(5px);
 				z-index: 2;
+				li {
+					&.root {
+						margin: 0;
+						> a {
+							display: none;
+						}
+					}
+					a {
+						color: $color-secondary-blue;
+						&:hover {
+							color: $color-primary-orange;
+						}
+					}
+				}				
 			}
 			&.duvidas {
 				.title {
@@ -43,7 +59,7 @@ header {
 				}
 			}
 			&.troca {
-				background-color: #2EA3CF;
+				background-color: $color-secondary-blue;
 				.title {
 					font-family: $font-semibold;
 					color: $color-primary-navy;
@@ -74,30 +90,6 @@ header {
 		background: $white;
 		&.simples {
 		    box-shadow: 1px 1px 1px 1px $gray-semilight;
-		}
-		#top-search {
-			padding: 0 30px;
-			.wd-search {
-				.input-wrapper {	
-					margin-bottom: 0;	
-					margin-right: 0;
-					&:before {
-						content: '';
-						@extend .icon-search !optional;
-						position: absolute;
-						left: 15px;
-						top: 12px;
-					}		
-					input {
-						padding-left: 50px;
-						border-color: $color-primary-blue;
-						@include round(5px);
-					}
-				}
-				button {
-					display: none;
-				}
-			}
 		}
 		.welcome-shopper {
 			.icon {
