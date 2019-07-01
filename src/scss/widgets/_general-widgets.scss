@@ -89,7 +89,7 @@
 }
 
 /* banners */
-.wd-marketing-banner{
+.wd-marketing-banner {
 	max-width: 100%;
 	.banner-wrapper, a {
 		max-width: 100%;
@@ -130,12 +130,17 @@
 		.nav-control a {
 			display: block;
 			position: absolute;
+			font-size: 30px;
+			color: $color-primary-orange;
 			top: 50%;
-			left: 40px;
+			left: 20px;
 			transform: translate(0, -50%);
 			&.next {
 				left: initial;
-				right: 40px;
+				right: 20px;
+			}
+			&:hover {
+				color: $color-dark-orange;
 			}
 		}
 	}
