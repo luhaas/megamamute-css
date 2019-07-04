@@ -15,14 +15,14 @@ body {
 	}
 	a {
 		text-decoration: none;
-		color: $base-color;
+		color: $color-primary-blue;
 		&:active {
-			color: darken( $base-color, 20% );
-    		text-decoration: none;
+			color: $color-dark-blue;
+    	text-decoration: none;
 		}
 		&:hover {
-			color: darken( $base-color, 20% );
-    		text-decoration: underline;
+			color: $color-dark-blue;
+    	text-decoration: underline;
 		}
 	}
 	input[type="color"],
