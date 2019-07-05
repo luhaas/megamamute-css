@@ -99,7 +99,7 @@
                 height: 48px;
                 margin-right: 20px;
                 border-width: 0;
-                @include shadow(0, 3px, 6px, 0.16);
+                @include shadow();
                 &.error {
                     border-width: 1px;
                 }
@@ -108,7 +108,7 @@
 				button {
                     line-height: 48px;
                     @extend .btn-green !optional;
-                    @include shadow(0, 3px, 6px, 0.16);
+                    @include shadow();
 				}
             }
             .message {

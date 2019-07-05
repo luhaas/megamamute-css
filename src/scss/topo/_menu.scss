@@ -51,7 +51,7 @@
 			position: absolute;
 			top: 70px;
 			left: 0;			
-			@include shadow(0, 3px, 6px, 0.16);
+			@include shadow();
 			z-index: 100;
 			transition-delay: 100ms;
 			.wd-category-menu {
@@ -68,7 +68,8 @@
 						h3 {
 							margin: 0;
 							a {
-								display: block;
+								display: flex;
+								align-items: center;
 								font-size: 16px;
 								color: #9A9A9A;
 								width: 216px;
@@ -77,6 +78,10 @@
 								position: relative;
 								&:hover {
 									text-decoration: none;
+								}
+								.icon {
+									@extend .icon;
+									margin-right: 5px;
 								}
 							}
 						}
@@ -88,6 +93,27 @@
 								right: 15px;
 								top: 15px;
 							}
+						}
+						&.eletronicos h3 .icon {
+							@extend .icon-menu-eletronicos !optional;
+						}
+						&.informatica h3 .icon {
+							@extend .icon-menu-informatica !optional;
+						}
+						&.impressao h3 .icon {
+							@extend .icon-menu-all-impressoras !optional;
+						}
+						&.casa h3 .icon {
+							@extend .icon-menu-home !optional;
+						}
+						&.telefonia h3 .icon {
+							@extend .icon-menu-telefonia !optional;
+						}
+						&.open-box h3 .icon {
+							@extend .icon-menu-all-open-box !optional;
+						}
+						&.outras-categorias h3 .icon {
+							@extend .icon-menu-outros !optional;
 						}
 						&:hover {
 							h3 a {
@@ -109,7 +135,7 @@
 							top: 0;
 							left: 216px;
 							top: 0;
-							@include shadow(0, 3px, 6px, 0.16);
+							@include shadow();
 							border-bottom-right-radius: 5px;
 							> li {
 								> h4 a {
@@ -168,45 +194,45 @@
 	}
 	.main-category {
 		margin: 0;
-		.section  {
+		.sections {
 			> li {
 				float: left;
 				margin: 0;
 				padding: 0;
+				position: relative;
 				h3 {
-					font-size: $font-size;
-					font-weight: normal;					
+					font-family: $font-decima-bold;
+					font-size: $font-size;				
 					display: inline-block;
 					padding: 0;
 					margin: 0;
 					a {
 						color: $white;
-						padding: 1.06em 1.4em;
-						display: block;
+						padding: 0 15px;
+						line-height: 70px;
+						display: flex;
+						align-items: center;
 						text-decoration: none;
+						text-transform: uppercase;
+						i {
+							margin-right: 5px;
+						}
 					}
 				}
-				&:not(:first-child) {
-					&:before {
-					content: '';
-					width: 1px;
-					height: 12px;
-					display: inline-block;
-					background-color: $white;	
-					}			
-				}
 				&:hover {
-					background-color: $darken-color;
-					.sub-section {
+					.sub-sections {
 						display: block;
 						position: absolute;
-						border: 1px solid $gray-light;
+						left: 50%;
+						transform: translateX(-50%);
 						border-top: 0;
-						background-color:$white;
+						background-color: $white;
 						z-index: 55;
-						padding: 20px 30px;
+						padding: 25px;
 						min-width: 100px;
-     					transition-delay: 100ms;
+						transition-delay: 100ms;
+						@include shadow();
+						@include round();
 						li {
 							&:first-child {
 								margin-top: 0;
@@ -218,16 +244,40 @@
 								margin: 0;
 							}
 						}
-						
-						* {
-							font-size: 0.97em;
-							font-weight: normal;	
+					}
+					&.informatica, &.casa {
+						.sub-sections {
+							min-width: 400px;
+							> li {
+								width: 49%;
+								display: inline-block;
+								padding-right: 40px;
+								a {
+									display: grid;
+									grid-template-columns: 30px 1fr;
+									grid-gap: 5px;
+									align-items: center;
+								}
+								&:nth-child(2n) {
+									padding-right: 0;
+									width: 49%;
+								}
+								.icon {
+    							margin: 0 auto;
+								}
+							}
+						}
+					}
+					&.impressoras {
+						.sub-sections {
+							display: grid;
+							grid-template-columns: 1fr 1fr;
 						}
 					}
 				}
 			}
 		}
-		.sub-section {
+		.sub-sections {
 			display: none;
 		}
 	}
