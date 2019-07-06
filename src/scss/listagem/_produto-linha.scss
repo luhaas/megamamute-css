@@ -10,6 +10,17 @@
 	}
 	.item-head {
 		border-bottom: 1px solid #D9D9D9;
+		.wd-product-line-medias {
+			a.thumb {
+				max-width: 100%;
+			}
+			.variation {
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
 		.rating {
 			position: absolute;
 			bottom: -12px;
