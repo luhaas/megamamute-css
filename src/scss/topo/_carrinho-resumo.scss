@@ -67,7 +67,7 @@
 		width: 431px;
 		background-color: $white;
 		@include round();
-		@include shadow(0, 3px, 6px, 0.16);
+		@include shadow();
 		padding: 20px 25px;
 		top: 65px;
 		.wd-header {

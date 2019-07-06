@@ -135,7 +135,7 @@
   }
 }
 
-@mixin shadow($x, $y, $b, $opacity) {
+@mixin shadow($x: 0, $y: 3px, $b: 6px, $opacity: 0.16) {
   -webkit-box-shadow: $x $y $b rgba(0,0,0,$opacity);
   -moz-box-shadow: $x $y $b rgba(0,0,0,$opacity);
   box-shadow: $x $y $b rgba(0,0,0,$opacity);
