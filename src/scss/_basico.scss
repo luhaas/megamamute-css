@@ -225,7 +225,16 @@ body {
 		z-index: 2;
 	}
 }
-.wrapper, .grid-products #middle, [class^="context-category"] #middle {
+#content, 
+#content-wrapper, 
+#content-wrapper > article,
+#middle, 
+#middle footer,
+#middle header {
+	 overflow: initial;
+}
+
+.wrapper {
 	@include grid-container;
 	position: relative;
 	margin: 0 auto;
@@ -236,7 +245,7 @@ body {
 	}
 }	
 @media screen and (min-width: $wrapper) {
-	.wrapper, .grid-products #middle, [class^="context-category"] #middle {
+	.wrapper {
 		@include wrapper-width();
 	}
 }
@@ -244,7 +253,7 @@ body {
 	#middle {
 		padding: 15px;
 	}
-	.wrapper, .grid-products #middle, [class^="context-category"] #middle {
+	.wrapper {
 		@include wrapper-width(100%);
 	}	
 }

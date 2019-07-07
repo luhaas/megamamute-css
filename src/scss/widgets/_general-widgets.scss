@@ -49,22 +49,27 @@
 	}
 }
 .wd-browsing-breadcrumbs {
+	display: flex;
+	align-items: center;
 	margin-bottom: 20px;
+	font-size: 12px;
 	.location {
-		display: none;
+		color: #979797;
+		font-family: $font-regular;
 	}
 	li:not(.last){
 		&:after {
-			@include aws-icon("\f105");
-			color: $gray-dark;
+			content: '>';
+			color: #979797;
 		}
 		a {
-			color: $gray-dark;
+			color: #979797;
 		}
 	}
 	.last {
 		strong {
-			font-weight: bold;
+			font-family: $font-regular;
+			color: $color-primary-navy;
 		}
 	}
 }

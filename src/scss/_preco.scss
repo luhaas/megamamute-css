@@ -34,8 +34,11 @@
 		}
 	}
 	.savings {
+		font-size: $font-size;
 		color: #787878;
-		.discount {
+		margin-top: 5px;
+		.instant-price {
+			display: block;
 			font-size: 28px;
 			font-family: $font-bold;
 			color: $price-off;
@@ -48,9 +51,15 @@
 	}
 }
 .product-detail .head {
-	.sale-price {
-		span {
-			font-size: 2em;
+	.savings {
+		margin-top: 15px;
+		.instant-price {
+			font-size: 36px;
+		}
+	}
+	.open-box {
+		.savings .instant-price {
+			color: $color-primary-orange;
 		}
 	}
 }

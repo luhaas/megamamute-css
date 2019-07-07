@@ -1,8 +1,18 @@
 .wd-flags {
 	position: absolute;
 	 z-index: 10;
-	.flag {
-		@include flag();
+	span.flag {
+		display: table;
+    padding: 0 5px;
+    font-family: $font-decima-bold;
+		font-size: 11px;
+		line-height: 17px;
+    text-transform: uppercase;
+    background-color: $color-primary-orange;
+    color: $white;
+    text-align: center;
+    margin-bottom: 5px;
+    @include round(2px);
 	}	
 
 }

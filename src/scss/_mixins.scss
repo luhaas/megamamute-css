@@ -68,19 +68,6 @@
     font-weight:$weight;
 }
 
-/* flags */
-@mixin flag($display: table,$padding: 0.3em 0.6em, $font-size:0.8em,$bg-color:$flag, $color: $white, $margin:0 0 3px 0, $round: 2px) {
-    display: $display;
-    padding: $padding;
-    font-size: $font-size;
-    text-transform: uppercase;
-    background-color:$bg-color;
-    color: $color;
-    text-align: center;
-    margin: $margin;
-    @include round($round);
-}
-
 /* usado no carrinho e detalhe do produto para estilizar o input de quantidade */
 @mixin input-quantity($button-width,$button-padding,$input-width,$input-height, $size-btn: $font-size) {
   button {
