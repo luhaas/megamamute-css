@@ -106,22 +106,55 @@
 	}
 }
 .wd-browsing-grid {
-	.wd-browsing-grid-sorter {
-		position: initial;
-	    width: 27%;
-	    min-width: 250px;
-	    display: inline-block;
-	    @include grid-media($grid-smartphone) {
-			float: left;
-			margin-top: 15px;
+	.select-grid {
+		display: flex;
+		justify-content: flex-end;
+		span {
+			display: block;
+			width: 11px;
+			height: 23px;
+			background-color: #E1E1E1;
+			@include round(2px);
+			margin-right: 3px;
+			&:last-child {
+				margin: 0;
+			}
 		}
-	    * {
-	    	display: inline-block;
-	    }
-	    select {
-	    	max-width: 160px;
-	    	margin-left: 5px;
-	    }
+		.selected {
+			span {
+				background-color: $color-primary-navy;
+			}
+		}
+		.three-columns, .four-columns {
+			display: flex;
+			align-items: center;
+			cursor: pointer;
+		}
+		.three-columns {
+			margin-right: 12px;
+		}
+	}
+	.wd-browsing-grid-sorter {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: initial;
+		span {
+			color: $color-primary-orange;
+		}
+		.option {
+			color: #979797;
+			label {
+				cursor: pointer;
+			}
+			&:hover, &.selected {
+				color: $color-primary-navy;
+				text-decoration: underline;
+			}
+			input {
+				display: none;
+			}
+		}
 	}
 	.wd-browsing-grid-pager {
 		width: 73%;
@@ -132,10 +165,18 @@
 	}
 	.wd-browsing-grid-list {
 		margin: 15px 0;
-		> ul {			
-			border-top: 1px solid $gray-light;
-			border-bottom: 1px solid $gray-light;
+		> ul {
+			display: grid;
+			grid-template-columns: 260px 260px 260px;
+			grid-gap: 55px;
 			padding-bottom: 30px;	
+			li {
+				width: 100%;
+			}
+		}
+		&.four-columns > ul {
+			grid-template-columns: 212px 212px 212px 212px;
+			grid-gap: 17px;
 		}
 	}
 }
