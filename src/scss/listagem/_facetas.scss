@@ -1,4 +1,10 @@
+.grid-content {
+	display: grid;
+	grid-template-columns: 260px 1fr;
+	grid-gap: 40px;
+}
 #left {
+	width: 260px;
 	padding: 0;
 	margin: 0;
 	.wd-facet-group {
@@ -10,51 +16,94 @@
 				.facet-type-list {
 					.facet-title {
 						overflow: hidden;
+						display: flex;
+						align-items: center;
+						justify-content: flex-start;
+						padding: 15px 0;
+						border-color: #D9D9D9;
 						&::before {
-    						display: none;
+    					display: none;
 						}
 						&::after {
-							@include aws-icon("\f077");
-							float: right;
-							position: relative;
-							top: 3px;
+							@include aws-icon("\f068");
+							color: $color-primary-orange;
+							margin-right: 10px;
 						}
 						&.facet-closed {							
 							&::after {
-								@include aws-icon("\f078");
+								@include aws-icon("\f067");
 							}
 						}
 						h3 {
-							float: left;
+							order: 2;
+							font-family: $font-extrabold;
+							font-size: 18px;
+							color: $color-primary-blue;
+						}						
+						&:hover {
+							h3 {
+								color: $color-primary-orange;
+							}
 						}
 					}
-					.option-title {
-						color: $base-color;
+					ul {
+						padding-left: 20px;
+						li:first-child {
+							margin-top: 0;
+						}
 					}
+					h4 a {
+						color: #979797;
+						.option-title, .option-count {
+							color: #979797;
+						}
+						&:hover {
+							color: $color-primary-orange;
+							.option-title, .option-count {
+								color: $color-primary-orange;
+							}
+						}
+					}
+					
 				}
 				.facet-type-range .range-wrapper {
-					background: #fff;
+					background: $white;
 					border: 0;
+					padding: 0 20px;
+					margin-top: 25px;
+					margin-bottom: 20px;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
 					* {
 						box-shadow: none;
 						color: $font-dark;
 					}
 					.handler {
 						.icon {
-							@include round(100%);
-							background-color: $white;
-							width: 12px;
-							height: 12px;
-							border: 1px solid $gray-medium;
+							background-color: $color-secondary-blue;
+							width: 16px;
+							height: 16px;
+							border: 0;
+							@include round(2px);
 						}
 					}
 					.defined-range {
-						background: $lighten-color;
+						background: #979797;
+					}
+					.range2h {
+						.min-text, .max-text {
+							bottom: initial;
+							top: -30px;
+							font-size: $font-size;
+							color: #979797;
+						}
 					}
 					.submit {
 						@extend .btn;
-						@extend .btn-wide;
-						margin-top: 35px;
+						background-color: $color-secondary-blue;
+						font-size: 16px;
+						margin-top: 25px;
 					}
 				}
 			}			

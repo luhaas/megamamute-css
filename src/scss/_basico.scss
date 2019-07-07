@@ -233,6 +233,12 @@ body {
 #middle header {
 	 overflow: initial;
 }
+#middle {
+	padding-top: 0;
+}
+#content {
+	float: none !important;
+}
 
 .wrapper {
 	@include grid-container;
