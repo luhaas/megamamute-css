@@ -62,11 +62,16 @@
 		cursor: wait;
 	}
 	&.btn-buy {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		background-color: $btn-buy;
+		font-size: 22px;
 		&:before {
-			@include aws-icon("\f07a");
-			font-size:0.8em;
-			padding-right: 5px;
+			content: '';
+			@extend .icon !optional;
+			@extend .icon-buy-product !optional;
+			margin-right: 15px;
 		}
 		&:active {
 			background: tint($btn-buy, 20%);
@@ -81,12 +86,13 @@
 			line-height: 1.5em;
 		}
 	}
-	&.bt-notifyme {		
-		margin: 15px 0;		    		
+	&.bt-notifyme {
+		font-size: 22px;  
+		line-height: 57px;  		
 		@extend .btn-wide;
 		background: $gray-dark;
-		padding: 15px;
-		font-family: $font-regular;
+		font-family: $font-decima-bold;
+		@include round();
 		&:active {
 			background: tint($gray-dark, 20%);
 		}

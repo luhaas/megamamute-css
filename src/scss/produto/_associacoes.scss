@@ -1,11 +1,45 @@
 .wd-widget {
 	width: 100%;
 	.wd-product-associations {
+		margin-top: 50px;
+		.wd-header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			.wd-title, .wd-icon {
+				background-color: $white;
+			}
+			.wd-title {
+				font-family: $font-decima;
+				font-size: 34px;
+				text-transform: uppercase;
+				padding-right: 25px;
+				order: 1;
+			}
+			.wd-icon {
+				padding-left: 25px;
+				order: 2;
+				&:before {
+					@include aws-icon("\f078");
+					color: $color-primary-orange;
+					font-size: 30px;
+				}
+			}
+			&:before {
+				content: '';
+				width: 100%;
+				height: 1px;
+				position: absolute;
+				background-color: $color-primary-blue;
+				z-index: -1;
+			}
+		}
 		.wd-content {
 			ul {
 				li {
 					width: inherit;					
-		    		text-align: left;
+					text-align: left;
+					margin-bottom: 35px;
 					.wd-product-line-medias {
 						.thumb, img {
 							max-width: 100%;
@@ -19,78 +53,120 @@
 				}
 			}
 		}
-		&:not(.cross-sell) {
-			.wd-header {
-		    	padding: 20px;
-		    	.wd-title {
-		    		font-size: 1.8em;
-		    	}
-		    }
-		}
-		&.cross-sell{
+		&.cross-sell {
+			overflow: initial;
 			.wd-content {
 				form  {
+					display: flex;
+					align-items: center;
+					justify-content: center;
 					ul {
+						display: flex;
+						overflow: initial;
 						li {
-							&.first {
-								position: relative;
-								&::after {
-									content: '+';
-									font-size: 4em;
-									position: absolute;
-									right: -16px;
-									top: 30%;
+							width: 260px;
+							margin-right: 58px;
+							margin-bottom: 0;
+							position: relative;
+							.wd-product-line {
+								border-bottom-color: $color-primary-orange;
+								@include round();
+								@include shadow(0, 3px, 10px, 0.16);
+							}
+							.wd-product-price-description {
+								height: auto;
+							}
+							.cross-sell-variations {
+								margin: 20px 0 0 0;
+								select {
+									border: 1px solid $color-primary-blue;
+									padding: 0 15px;
+									height: 28px;
+								}
+							}
+							&:after {
+								content: '';
+								position: absolute;
+								right: -46px;
+								top: 50%;
+								transform: translateY(-50%);
+								@extend .icon !optional;
+								@extend .icon-crossell-plus !optional;
+							}
+							&:last-child {
+								&:after {
+									@extend .icon-crossell-iqual !optional;
 								}
 							}
 						}
 					}
-					.cross-sell-footer {
-						background-color: #fff;
-	     				padding-top: 80px;
-	     				text-align: center;
-	     				position: relative;
-	     				&::before {
-	     					content: '=';
-							font-size: 4em;
-							position: absolute;
-							left: -20px;
-							top: 30%;
-							@include grid-media($grid-smartphone){
-								display:none;
+					.plus {
+						display: none;
+					}
+					.cross-sell-footer {						
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						justify-content: center;
+						width: 220px;
+						max-width: 220px;
+						margin: 0;
+						background-color: $white;
+						text-align: center;
+						position: relative;
+						overflow: initial;
+						.no-variation-selected {
+							font-size: 1.3em;
+							height: auto;
+							line-height: initial;
+							margin: 0;
+							position: initial;
+						}
+						.btn-buy, .total {
+							float: none;
+							margin: 0;
+						}
+						.total {
+							width: 100%;
+							text-align: center;
+							line-height: 1em;
+							.total-header {
+								color: $font-black;
+								.h2 {
+									margin-bottom: 10px;
+								}
+								span {
+									font-size: 16px;
+								}
+								i {
+									margin: 30px 0;
+								}
 							}
-	     				}
-	     				@include grid-media($grid-smartphone){
-	     					padding-top: 20px;
-	     					background-color: $gray-light;
-	     				}
-	     				.no-variation-selected {
-	     					font-size: 1.3em;
-	     					height: auto;
-	     					line-height: initial;
-	     					margin: 0;
-	     					position: initial;
-	     				}
-	     				.btn-buy, .total {
-	     					float: none;
-	     				}
-	     				.total {
-	     					text-align: center;
-	     				}
+							.asyncprice-area {
+								margin: 0;
+								.sale-price {
+									span {
+										color: $font-black;
+										font-size: 24px;
+										padding-left: 5px;
+									}
+								}
+							}
+						}
+						.btn-buy {
+							order: 2;							
+							width: 100%;
+							font-size: 18px;
+							line-height: 50px;
+							padding: 0;
+							margin-top: 20px;
+							@include round();
+						}
 					}
 				}			
 			}
-		}	
+		}
 	}
-}
-.wd-product-reviews.wd-widget, .wd-product-associations.wd-widget.cross-sell {
-	border: 1px solid $gray-medium;
-    .wd-header {
-    	background-color: $gray-light;
-    	padding: 20px;
-    	.wd-title {
-    		font-size: 1.8em;
-    	}
-    }
 }
 
 .wd-product-reviews {
