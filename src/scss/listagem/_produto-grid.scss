@@ -106,32 +106,46 @@
 	}
 }
 .wd-browsing-grid {
-	.select-grid {
-		display: flex;
-		justify-content: flex-end;
-		span {
-			display: block;
-			width: 11px;
-			height: 23px;
-			background-color: #E1E1E1;
-			@include round(2px);
-			margin-right: 3px;
-			&:last-child {
-				margin: 0;
+	.wd-content {
+		header {
+			padding-bottom: 15px;
+			border-bottom: 1px solid #E1E1E1;
+			position: relative;
+			.products-count {
+				font-size: 12px;
+				color: #979797;
+				position: absolute;
+				top: -30px;
+				right: 0;
 			}
-		}
-		.selected {
-			span {
-				background-color: $color-primary-navy;
+			.select-grid {
+				display: flex;
+				justify-content: flex-end;
+				span {
+					display: block;
+					width: 11px;
+					height: 23px;
+					background-color: #E1E1E1;
+					@include round(2px);
+					margin-right: 3px;
+					&:last-child {
+						margin: 0;
+					}
+				}
+				.selected {
+					span {
+						background-color: $color-primary-navy;
+					}
+				}
+				.three-columns, .four-columns {
+					display: flex;
+					align-items: center;
+					cursor: pointer;
+				}
+				.three-columns {
+					margin-right: 12px;
+				}
 			}
-		}
-		.three-columns, .four-columns {
-			display: flex;
-			align-items: center;
-			cursor: pointer;
-		}
-		.three-columns {
-			margin-right: 12px;
 		}
 	}
 	.wd-browsing-grid-sorter {
@@ -157,10 +171,53 @@
 		}
 	}
 	.wd-browsing-grid-pager {
-		width: 73%;
-		display: inline-block;
-		@include grid-media($grid-smartphone) {
-			width: 100%;
+		position: relative;
+		top: -37px;
+    display: flex;
+    justify-content: center;
+		.description {
+			display: none;
+		}
+		.page-number {
+			background-color: $white;
+			float: none;
+			@include round();
+			@include shadow(0, 2px, 6px, 0.16);
+			span {
+				font-family: $font-decima;
+				color: #979797;
+				font-size: $font-size;
+				background-color: transparent;
+				line-height: 40px;
+				padding: 0 17px;
+				float: left;
+				@include round(0);
+				&.page-selected {
+					border: 0;
+					color: $color-primary-orange;
+					font-family: $font-decima-bold;
+				}
+			}
+			.arrow {
+				font-size: 0;
+				text-align: center;
+				background-color: $color-primary-blue;
+				color: $white;
+				width: 30px;
+				padding: 0;
+				i {
+					font-size: 8px;
+					line-height: 40px;
+				}
+				&.arrow-left {
+					margin-right: 5px;
+					@include round-left();
+				}
+				&.arrow-right {
+					margin-left: 5px;
+					@include round-right();
+				}
+			}
 		}
 	}
 	.wd-browsing-grid-list {
@@ -169,9 +226,13 @@
 			display: grid;
 			grid-template-columns: 260px 260px 260px;
 			grid-gap: 55px;
-			padding-bottom: 30px;	
+			padding-bottom: 50px;	
+			border-top: 0;
+			border-bottom: 1px solid #E1E1E1;
+			margin: 0;
 			li {
 				width: 100%;
+				margin: 0;
 			}
 		}
 		&.four-columns > ul {

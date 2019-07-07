@@ -11,41 +11,34 @@
 		.facets {
 			background: #fff;
 			border: 0;
+			padding: 0;
 			@include round(0);
 			.facet-type {
-				.facet-type-list {
-					.facet-title {
-						overflow: hidden;
-						display: flex;
-						align-items: center;
-						justify-content: flex-start;
-						padding: 15px 0;
-						border-color: #D9D9D9;
-						&::before {
-    					display: none;
-						}
-						&::after {
-							@include aws-icon("\f068");
-							color: $color-primary-orange;
-							margin-right: 10px;
-						}
-						&.facet-closed {							
-							&::after {
-								@include aws-icon("\f067");
-							}
-						}
-						h3 {
-							order: 2;
-							font-family: $font-extrabold;
-							font-size: 18px;
-							color: $color-primary-blue;
-						}						
-						&:hover {
-							h3 {
-								color: $color-primary-orange;
-							}
-						}
+				.facet-title {
+					overflow: hidden;
+					padding: 15px 0;
+					border-color: #D9D9D9;
+					font-family: $font-extrabold;
+					font-size: 18px;
+					color: $color-primary-blue;
+					&::before {
+						@include aws-icon("\f068");
+						color: $color-primary-orange;
+						margin-right: 10px;
+						position: initial;
+						width: auto;
+						border: 0;
 					}
+					&.facet-closed {							
+						&::before {
+							@include aws-icon("\f067");
+						}
+					}			
+					&:hover {
+						color: $color-primary-orange;
+					}
+				}
+				.facet-type-list {
 					ul {
 						padding-left: 20px;
 						li:first-child {
