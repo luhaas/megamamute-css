@@ -12,10 +12,11 @@
 }
 .wd-browsing-product-carousel {
 	.wd-product-list {
+		overflow: hidden;
 		.wd-product-list {
 			height: auto;
 			li {
-				width: 260px;
+				width: 263px;
 				margin: 15px 0 35px 30px;
 			}
 		}
@@ -148,6 +149,11 @@
 			width: 900px;
 			overflow: hidden;
 			margin: 0 auto;
+			.wd-product-list {
+				li:last-child {
+					margin-right: 30px;
+				}
+			}
 		}
 		.jcarousel-control-next, .jcarousel-control-prev {
 			width: 30px;
@@ -159,6 +165,9 @@
 				color: $white;
 				font-size: 19px;
 				line-height: 60px;
+			}
+			&:hover {
+				text-decoration: none;
 			}
 		}
 		.jcarousel-control-prev {

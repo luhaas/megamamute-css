@@ -44,6 +44,7 @@
 		.medias {
 			width: 454px;
 			padding: 0;
+			position: relative;
 			.wd-product-medias-displayer {
 				.zoom, img.ezZoom-small {
 					width: 100% !important;
@@ -107,7 +108,7 @@
 								}
 								&.selected {
 									border-width: 2px;
-									border-color: #707070;
+									border-color: $gray-dark;
 									position: relative;
 									span {
 										width: 32px;
@@ -124,7 +125,7 @@
 										font-size: 13px;
 										font-family: $font-regular;
 										text-indent: initial;
-										color: #707070;
+										color: $gray-dark;
 									}
 								}
 							}
