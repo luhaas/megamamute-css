@@ -54,16 +54,16 @@
 	margin-bottom: 20px;
 	font-size: 12px;
 	.location {
-		color: #979797;
+		color: $gray-97;
 		font-family: $font-regular;
 	}
 	li:not(.last){
 		&:after {
 			content: '>';
-			color: #979797;
+			color: $gray-97;
 		}
 		a {
-			color: #979797;
+			color: $gray-97;
 		}
 	}
 	.last {
@@ -80,18 +80,29 @@
 
 /* carrossel de marcas */
 .wd-brand-carousel {
+	position: relative;
 	li {
 		width: auto;
 		margin: 0 10px 0 0;
+		border-right: 1px solid $gray-dark;
+		&:last-child {
+			border: 0;
+		}
 	}
 	.jcarousel-control-prev, .jcarousel-control-next {
-		line-height: 60px;
 		i {
-			color: $base-color;
-			font-size: 30px;
-			top: 15px;
+			color: $color-primary-orange;
+			font-size: 20px;
+			top: 50%;
+			transform: translateY(-50%);
 			&:hover {
-				color: $darken-color;
+				color: $color-dark-orange;
+			}
+		}		
+		&.inactive i {
+			color: #989898;
+			&:hover {
+				color: #989898;
 			}
 		}
 	}

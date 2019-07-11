@@ -12,10 +12,11 @@
 }
 .wd-browsing-product-carousel {
 	.wd-product-list {
+		overflow: hidden;
 		.wd-product-list {
 			height: auto;
 			li {
-				width: 260px;
+				width: 263px;
 				margin: 15px 0 35px 30px;
 			}
 		}
@@ -118,6 +119,74 @@
 	}
 }
 
+.category-route .mega-oferta {
+	padding: 60px 0 20px;
+	background-image: url('/Custom/Content/Themes/#{$theme-path}/Imagens/bg-megaoferta-categoria.png');
+	background-repeat: no-repeat;
+	background-position: center 75px;
+	.wd-widget.wd-browsing-product-carousel {
+		margin: 0;
+		.wd-header {
+			top: -40px;
+			.wd-title {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-family: $font-decima-heavy;
+				color: $color-primary-orange;
+				&:before {
+					content: '';
+					@extend .icon;
+					@extend .icon-forward-right !optional;
+					margin-right: 30px;
+				}
+				&:after {
+					content: '';
+					@extend .icon;
+					@extend .icon-forward-left !optional;
+					margin-left: 30px;
+				}
+			}
+		}
+		.wd-content {
+			width: 900px;
+			overflow: hidden;
+			margin: 0 auto;
+			.wd-product-list {
+				li {
+					width: 260px;
+					&:last-child {
+						margin-right: 30px;
+					}
+				}
+			}
+		}
+		.jcarousel-control-next, .jcarousel-control-prev {
+			width: 30px;
+			height: 60px;
+			text-align: center;
+			background-color: $color-primary-orange;
+			i {
+				display: block;
+				color: $white;
+				font-size: 19px;
+				line-height: 60px;
+			}			
+			&.inactive i {
+				color: #989898;
+			}
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		.jcarousel-control-prev {
+			@include round-left(100%);
+		}
+		.jcarousel-control-next {
+			@include round-right(100%);
+		}
+	}
+}
 @media screen and (max-width:575px) {
 	.wd-product-list-contextual {
 		.wd-product-list{

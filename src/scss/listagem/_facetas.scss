@@ -1,51 +1,42 @@
-.grid-content {
-	display: grid;
-	grid-template-columns: 260px 1fr;
-	grid-gap: 40px;
-}
 #left {
 	width: 260px;
 	padding: 0;
 	margin: 0;
 	.wd-facet-group {
+		.selected-facets {
+			display: none !important;
+		}
 		.facets {
 			background: #fff;
 			border: 0;
+			padding: 0;
 			@include round(0);
 			.facet-type {
-				.facet-type-list {
-					.facet-title {
-						overflow: hidden;
-						display: flex;
-						align-items: center;
-						justify-content: flex-start;
-						padding: 15px 0;
-						border-color: #D9D9D9;
-						&::before {
-    					display: none;
-						}
-						&::after {
-							@include aws-icon("\f068");
-							color: $color-primary-orange;
-							margin-right: 10px;
-						}
-						&.facet-closed {							
-							&::after {
-								@include aws-icon("\f067");
-							}
-						}
-						h3 {
-							order: 2;
-							font-family: $font-extrabold;
-							font-size: 18px;
-							color: $color-primary-blue;
-						}						
-						&:hover {
-							h3 {
-								color: $color-primary-orange;
-							}
-						}
+				.facet-title {
+					overflow: hidden;
+					padding: 15px 0;
+					border-color: #D9D9D9;
+					font-family: $font-extrabold;
+					font-size: 18px;
+					color: $color-primary-blue;
+					&::before {
+						@include aws-icon("\f068");
+						color: $color-primary-orange;
+						margin-right: 10px;
+						position: initial;
+						width: auto;
+						border: 0;
 					}
+					&.facet-closed {							
+						&::before {
+							@include aws-icon("\f067");
+						}
+					}			
+					&:hover {
+						color: $color-primary-orange;
+					}
+				}
+				.facet-type-list {
 					ul {
 						padding-left: 20px;
 						li:first-child {
@@ -53,9 +44,9 @@
 						}
 					}
 					h4 a {
-						color: #979797;
+						color: $gray-97;
 						.option-title, .option-count {
-							color: #979797;
+							color: $gray-97;
 						}
 						&:hover {
 							color: $color-primary-orange;
@@ -89,14 +80,14 @@
 						}
 					}
 					.defined-range {
-						background: #979797;
+						background: $gray-97;
 					}
 					.range2h {
 						.min-text, .max-text {
 							bottom: initial;
 							top: -30px;
 							font-size: $font-size;
-							color: #979797;
+							color: $gray-97;
 						}
 					}
 					.submit {

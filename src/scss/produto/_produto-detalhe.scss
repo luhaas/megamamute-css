@@ -38,12 +38,13 @@
 				padding: 10px 0;
 			}
 			.small-description {
-				color: #979797;
+				color: $gray-97;
 			}
 		}
 		.medias {
 			width: 454px;
 			padding: 0;
+			position: relative;
 			.wd-product-medias-displayer {
 				.zoom, img.ezZoom-small {
 					width: 100% !important;
@@ -94,7 +95,7 @@
 							overflow: initial;
 							label {
 								@include round(100%);
-								border: 1px solid #979797;
+								border: 1px solid $gray-97;
 								margin: 0;
 								&:not(:last-child) {
 									margin-right: 13px;
@@ -107,7 +108,7 @@
 								}
 								&.selected {
 									border-width: 2px;
-									border-color: #707070;
+									border-color: $gray-dark;
 									position: relative;
 									span {
 										width: 32px;
@@ -124,7 +125,7 @@
 										font-size: 13px;
 										font-family: $font-regular;
 										text-indent: initial;
-										color: #707070;
+										color: $gray-dark;
 									}
 								}
 							}
@@ -225,7 +226,7 @@
 				}
 				.seguranca {
 					font-family: $font-semibold;
-					color: #979797;
+					color: $gray-97;
 					.icon {
 						margin-right: 5px;
 					}

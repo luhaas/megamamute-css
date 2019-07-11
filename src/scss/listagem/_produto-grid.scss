@@ -2,6 +2,7 @@
 .category-route {
 	.page-description {
 		position: relative;
+		margin-bottom: 40px;
 		h1 {
 			font-family: $font-decima-heavy;
 			color: $color-primary-orange;
@@ -36,6 +37,7 @@
 			}
 		}
 		&.hasBanner {
+			margin-bottom: 0;
 			.text-category {		
 				position: absolute;
 				top: 0;
@@ -59,7 +61,7 @@
 	#full-description {
 		display: flex;
 		flex-direction: column;
-		margin-top: 60px;
+		padding-top: 60px;
 		.wd-marketing-banner .banner-wrapper img, .wd-marketing-banner a img {
 			width: auto;
 			height: auto;
@@ -75,7 +77,7 @@
 			}
 		}
 		.text {
-			padding: 30px;
+			padding: 30px 0;
 			font-size: $font-size;
 			line-height: 22px;
 		}
@@ -92,6 +94,9 @@
 					display: block;
 				}
 			}
+			.text {
+				padding: 30px;
+			}
 			.wd-marketing-banner {
 				position: relative;
 				&:after {
@@ -105,37 +110,181 @@
 		}
 	}
 }
+body:not(.grid-empty) .grid-content {
+	display: grid;
+	grid-template-columns: 260px 1fr;
+	grid-gap: 40px;
+}
 .wd-browsing-grid {
-	.wd-browsing-grid-sorter {
-		position: initial;
-	    width: 27%;
-	    min-width: 250px;
-	    display: inline-block;
-	    @include grid-media($grid-smartphone) {
-			float: left;
-			margin-top: 15px;
+	.facet-type-selected, .selected-facet, ul {
+			display: flex;
+	}
+	.facet-type-selected {
+		padding-top: 20px;
+		.selected-facet-name, li {
+			background-color: #f2f2f2;
+			color: $gray-97;
+			font-size: 14px;
+			line-height: 40px;
+			padding-left: 10px;
+			margin: 0;
+			&.selected-option {
+				color: $color-primary-navy;
+				display: flex;
+				align-items: center;
+				margin-right: 20px;
+				@include round();
+				&:first-child {
+					@include round-left(0);
+				}
+			}
+			.clear-filter {
+				font-size: 0;
+				line-height: 0;
+				cursor: pointer;
+				&:before {
+					content: '';
+					display: block;
+					@extend .icon-cancel !optional;
+					margin: 0 10px;
+				}
+			}
 		}
-	    * {
-	    	display: inline-block;
-	    }
-	    select {
-	    	max-width: 160px;
-	    	margin-left: 5px;
-	    }
+		.selected-facet-name {
+			@include round-left();
+		}
+	}
+	.wd-content {
+		header {
+			padding-bottom: 15px;
+			border-bottom: 1px solid #E1E1E1;
+			position: relative;
+			.products-count {
+				font-size: 12px;
+				color: $gray-97;
+				float: right;
+				margin-bottom: 20px;
+			}
+			.select-grid {
+				display: flex;
+				justify-content: flex-end;
+				span {
+					display: block;
+					width: 11px;
+					height: 23px;
+					background-color: #E1E1E1;
+					@include round(2px);
+					margin-right: 3px;
+					&:last-child {
+						margin: 0;
+					}
+				}
+				.selected {
+					span {
+						background-color: $color-primary-navy;
+					}
+				}
+				.three-columns, .four-columns {
+					display: flex;
+					align-items: center;
+					cursor: pointer;
+				}
+				.three-columns {
+					margin-right: 12px;
+				}
+			}
+		}
+	}
+	.wd-browsing-grid-sorter {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: initial;
+		span {
+			color: $color-primary-orange;
+		}
+		.option {
+			color: $gray-97;
+			label {
+				cursor: pointer;
+			}
+			&:hover, &.selected {
+				color: $color-primary-navy;
+				text-decoration: underline;
+			}
+			input {
+				display: none;
+			}
+		}
 	}
 	.wd-browsing-grid-pager {
-		width: 73%;
-		display: inline-block;
-		@include grid-media($grid-smartphone) {
-			width: 100%;
+		position: relative;
+		top: -37px;
+    display: flex;
+    justify-content: center;
+		.description {
+			display: none;
+		}
+		.page-number {
+			background-color: $white;
+			float: none;
+			@include round();
+			@include shadow(0, 2px, 6px, 0.16);
+			span {
+				font-family: $font-decima;
+				color: $gray-97;
+				font-size: $font-size;
+				background-color: transparent;
+				line-height: 40px;
+				padding: 0 17px;
+				float: left;
+				@include round(0);
+				&.page-selected {
+					border: 0;
+					color: $color-primary-orange;
+					font-family: $font-decima-bold;
+				}
+			}
+			.arrow {
+				font-size: 0;
+				text-align: center;
+				background-color: $color-primary-blue;
+				color: $white;
+				width: 30px;
+				padding: 0;
+				i {
+					font-size: 8px;
+					line-height: 40px;
+				}
+				&.arrow-left {
+					margin-right: 5px;
+					@include round-left();
+				}
+				&.arrow-right {
+					margin-left: 5px;
+					@include round-right();
+				}
+			}
 		}
 	}
 	.wd-browsing-grid-list {
 		margin: 15px 0;
-		> ul {			
-			border-top: 1px solid $gray-light;
-			border-bottom: 1px solid $gray-light;
-			padding-bottom: 30px;	
+		> ul {
+			display: grid;
+			grid-template-columns: 260px 260px 260px;
+			grid-gap: 55px;
+			padding-bottom: 50px;	
+			border-top: 0;
+			border-bottom: 1px solid #E1E1E1;
+			margin: 0;
+			li {
+				width: 100%;
+				margin: 0;
+			}
+		}
+		&.four-columns > ul {
+			grid-template-columns: 212px 212px 212px 212px;
+			grid-gap: 17px;
 		}
 	}
 }
