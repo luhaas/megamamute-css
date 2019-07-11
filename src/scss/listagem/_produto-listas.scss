@@ -120,29 +120,32 @@
 }
 
 .category-route .mega-oferta {
-	padding: 20px 0;
+	padding: 60px 0 20px;
 	background-image: url('/Custom/Content/Themes/#{$theme-path}/Imagens/bg-megaoferta-categoria.png');
 	background-repeat: no-repeat;
-	background-position: 0 70px;
+	background-position: center 75px;
 	.wd-widget.wd-browsing-product-carousel {
 		margin: 0;
-		.wd-header .wd-title {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			font-family: $font-decima-heavy;
-			color: $color-primary-orange;
-			&:before {
-				content: '';
-				@extend .icon;
-				@extend .icon-forward-right !optional;
-				margin-right: 30px;
-			}
-			&:after {
-				content: '';
-				@extend .icon;
-				@extend .icon-forward-left !optional;
-				margin-left: 30px;
+		.wd-header {
+			top: -40px;
+			.wd-title {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-family: $font-decima-heavy;
+				color: $color-primary-orange;
+				&:before {
+					content: '';
+					@extend .icon;
+					@extend .icon-forward-right !optional;
+					margin-right: 30px;
+				}
+				&:after {
+					content: '';
+					@extend .icon;
+					@extend .icon-forward-left !optional;
+					margin-left: 30px;
+				}
 			}
 		}
 		.wd-content {
@@ -150,8 +153,11 @@
 			overflow: hidden;
 			margin: 0 auto;
 			.wd-product-list {
-				li:last-child {
-					margin-right: 30px;
+				li {
+					width: 260px;
+					&:last-child {
+						margin-right: 30px;
+					}
 				}
 			}
 		}

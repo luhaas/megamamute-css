@@ -1,550 +1,484 @@
 .icon {
   display: inline-block;
 }
+
 .icon-american-express {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
+  background-position: -107px -199px;
+  width: 58px;
+  height: 38px;
+}
+.icon-arrow-right-white {
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
+  background-position: -395px -145px;
+  width: 6px;
+  height: 9px;
+}
+.icon-boleto {
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -165px -199px;
   width: 58px;
   height: 38px;
 }
-.icon-arrow-left-gray {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -384px -303px;
-  width: 12px;
-  height: 21px;
-}
-.icon-arrow-right-white {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -396px -204px;
-  width: 6px;
-  height: 9px;
-}
-.icon-arrowhead-pointing-to-the-right {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: 0px -284px;
-  width: 49px;
-  height: 36px;
-}
-.icon-boleto {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: 0px -246px;
-  width: 58px;
-  height: 38px;
-}
 .icon-buy-product {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -346px -202px;
   width: 28px;
   height: 27px;
 }
 .icon-buy-vitrine {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -300px -173px;
   width: 40px;
   height: 39px;
 }
 .icon-cancel {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -384px -360px;
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
+  background-position: -384px -145px;
   width: 11px;
   height: 11px;
 }
 .icon-crossell-iqual {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -188px -151px;
   width: 28px;
   height: 24px;
 }
 .icon-crossell-plus {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -346px -38px;
   width: 35px;
   height: 35px;
 }
 .icon-diners-club {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -49px -199px;
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
+  background-position: -223px -199px;
   width: 58px;
   height: 38px;
 }
 .icon-elo {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -107px -199px;
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
+  background-position: 0px -246px;
   width: 58px;
   height: 38px;
 }
 .icon-facebook {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -384px -204px;
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
+  background-position: -384px -102px;
   width: 12px;
   height: 23px;
 }
 .icon-forward-left {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -188px -113px;
   width: 38px;
   height: 38px;
 }
 .icon-forward-right {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -346px 0px;
   width: 38px;
   height: 38px;
 }
 .icon-header-cart {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: 0px -199px;
   width: 49px;
   height: 47px;
 }
 .icon-header-phone {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -384px -187px;
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
+  background-position: -384px -68px;
   width: 17px;
   height: 17px;
 }
 .icon-header-question {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -384px -170px;
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
+  background-position: -384px -85px;
   width: 17px;
   height: 17px;
 }
 .icon-header-return {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -384px -153px;
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
+  background-position: -40px -343px;
   width: 18px;
   height: 17px;
 }
 .icon-header-user {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -300px 0px;
   width: 46px;
   height: 46px;
 }
 .icon-hipercard {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -223px -199px;
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
+  background-position: -174px -246px;
   width: 58px;
   height: 38px;
 }
 .icon-home-card {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -49px -284px;
   width: 47px;
   height: 34px;
 }
 .icon-home-discount {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -300px -95px;
   width: 40px;
   height: 42px;
 }
 .icon-home-lock {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -346px -73px;
   width: 30px;
   height: 40px;
 }
 .icon-home-tradition {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -300px -46px;
   width: 38px;
   height: 49px;
 }
 .icon-home-truck {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -232px -246px;
   width: 58px;
   height: 37px;
 }
 .icon-instagram {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -113px -320px;
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
+  background-position: -23px -320px;
   width: 23px;
   height: 23px;
 }
 .icon-linkedin {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -116px -284px;
   width: 24px;
   height: 24px;
 }
 .icon-linx {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -227px -131px;
   width: 66px;
   height: 39px;
 }
 .icon-mastercard {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -116px -246px;
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
+  background-position: -58px -246px;
   width: 58px;
   height: 38px;
 }
+.icon-mega-oferta-arrow {
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
+  background-position: 0px -284px;
+  width: 49px;
+  height: 36px;
+}
 .icon-menu-all-impressoras {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -136px -320px;
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
+  background-position: 0px -320px;
   width: 23px;
   height: 23px;
 }
 .icon-menu-all-open-box {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -90px -177px;
   width: 27px;
   height: 22px;
 }
 .icon-menu-all {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -174px -177px;
   width: 27px;
   height: 18px;
 }
 .icon-menu-beleza {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -117px -177px;
   width: 29px;
   height: 20px;
 }
 .icon-menu-bicicletas {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -267px -112px;
   width: 30px;
   height: 19px;
 }
 .icon-menu-cartuchos {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -384px -93px;
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
+  background-position: -384px -26px;
   width: 16px;
   height: 22px;
 }
 .icon-menu-churrasco {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -346px -142px;
   width: 25px;
   height: 32px;
 }
 .icon-menu-computadores {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -267px -65px;
   width: 27px;
   height: 26px;
 }
 .icon-menu-cozinha {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -146px -177px;
   width: 28px;
   height: 19px;
 }
 .icon-menu-eletrodomesticos {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -20px -351px;
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
+  background-position: -20px -343px;
   width: 20px;
   height: 24px;
 }
 .icon-menu-eletronicos {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -346px -285px;
   width: 30px;
   height: 24px;
 }
 .icon-menu-eletroportateis {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -384px 0px;
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
+  background-position: -281px -199px;
   width: 19px;
   height: 27px;
 }
 .icon-menu-ferramentas {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -280px -284px;
   width: 20px;
   height: 20px;
 }
 .icon-menu-home {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -215px -284px;
   width: 23px;
   height: 21px;
 }
 .icon-menu-impressoras-acessorios {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -384px -74px;
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
+  background-position: -300px -284px;
   width: 19px;
   height: 19px;
 }
 .icon-menu-impressoras {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -259px -284px;
   width: 21px;
   height: 20px;
 }
 .icon-menu-informatica {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -165px -284px;
   width: 24px;
   height: 23px;
 }
 .icon-menu-monitores {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -189px -284px;
   width: 26px;
   height: 21px;
 }
 .icon-menu-mouses {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -384px -227px;
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
+  background-position: -384px -125px;
   width: 13px;
   height: 20px;
 }
 .icon-menu-moveis {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -346px -255px;
   width: 24px;
   height: 30px;
 }
 .icon-menu-multifuncionais {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -140px -284px;
   width: 25px;
   height: 23px;
 }
 .icon-menu-notebook {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -258px -170px;
   width: 31px;
   height: 21px;
 }
 .icon-menu-open-box {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -300px -137px;
   width: 44px;
   height: 36px;
 }
 .icon-menu-outros {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -159px -320px;
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
+  background-position: -69px -320px;
   width: 22px;
   height: 22px;
 }
 .icon-menu-pendrives {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -238px -284px;
   width: 21px;
   height: 21px;
 }
 .icon-menu-projetores {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -320px -284px;
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
+  background-position: -129px -320px;
   width: 24px;
   height: 12px;
 }
 .icon-menu-roteadores {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -201px -177px;
   width: 23px;
   height: 16px;
 }
 .icon-menu-som {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -300px -284px;
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
+  background-position: -109px -320px;
   width: 20px;
   height: 16px;
 }
 .icon-menu-tablets {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -384px -133px;
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
+  background-position: -384px -48px;
   width: 16px;
   height: 20px;
 }
 .icon-menu-telefonia {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -384px -115px;
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
+  background-position: -319px -284px;
   width: 18px;
   height: 18px;
 }
 .icon-menu-ventilacao {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -384px -27px;
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
+  background-position: -384px 0px;
   width: 17px;
   height: 26px;
 }
 .icon-menu-white-casa {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -346px -229px;
   width: 28px;
   height: 26px;
 }
 .icon-menu-white-impressoras {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -346px -174px;
   width: 28px;
   height: 28px;
 }
 .icon-menu-white-informatica {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -346px -113px;
   width: 30px;
   height: 29px;
 }
 .icon-menu-white-smartphones {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -96px -284px;
   width: 20px;
   height: 29px;
 }
 .icon-menu-white-tvs {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -227px -170px;
   width: 31px;
   height: 22px;
 }
 .icon-oferta-produto {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -300px -212px;
   width: 31px;
   height: 50px;
 }
 .icon-oferta-vitrine {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -227px -65px;
   width: 40px;
   height: 66px;
 }
 .icon-order-shield {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -384px -53px;
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
+  background-position: -91px -320px;
   width: 18px;
   height: 21px;
 }
 .icon-paypal {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -174px -246px;
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
+  background-position: -49px -199px;
   width: 58px;
   height: 38px;
 }
 .icon-product-bill {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: 0px -351px;
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
+  background-position: 0px -343px;
   width: 20px;
   height: 26px;
 }
 .icon-product-checked {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -384px -268px;
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
+  background-position: -58px -343px;
   width: 18px;
   height: 14px;
 }
 .icon-product-truck {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -267px -91px;
   width: 33px;
   height: 21px;
 }
 .icon-search {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -90px -320px;
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
+  background-position: -46px -320px;
   width: 23px;
   height: 23px;
 }
-.icon-seta-destaque-left {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -18px -320px;
-  width: 18px;
-  height: 31px;
-}
-.icon-seta-destaque-right {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -281px -199px;
-  width: 18px;
-  height: 31px;
-}
-.icon-seta-marcas-left {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -384px -282px;
-  width: 12px;
-  height: 21px;
-}
-.icon-seta-marcas-right {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -384px -247px;
-  width: 12px;
-  height: 21px;
-}
-.icon-seta-novidades-left {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -384px -342px;
-  width: 10px;
-  height: 18px;
-}
-.icon-seta-novidades-right {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -384px -324px;
-  width: 10px;
-  height: 18px;
-}
-.icon-seta-slider-left {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -36px -320px;
-  width: 18px;
-  height: 31px;
-}
-.icon-seta-slider-right {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -54px -320px;
-  width: 18px;
-  height: 31px;
-}
-.icon-seta-vitrine-left {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -72px -320px;
-  width: 18px;
-  height: 31px;
-}
-.icon-seta-vitrine-right {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: 0px -320px;
-  width: 18px;
-  height: 31px;
-}
 .icon-visa {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
-  background-position: -58px -246px;
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
+  background-position: -116px -246px;
   width: 58px;
   height: 38px;
 }
 .icon-vitrine-home {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -227px 0px;
   width: 73px;
   height: 65px;
 }
 .icon-vitrine-laptop {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -90px -113px;
   width: 98px;
   height: 64px;
 }
 .icon-vitrine-percent {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: 0px -113px;
   width: 90px;
   height: 86px;
 }
 .icon-vitrine-star {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -114px 0px;
   width: 113px;
   height: 108px;
 }
 .icon-vitrine-time {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: 0px 0px;
   width: 114px;
   height: 113px;
 }
 .icon-youtube {
-  background-image: url(/custom/content/themes/#{$theme-path}/imagens/sprite.png?v9);
+  background-image: url('/custom/content/themes/#{$theme-path}/imagens/sprite.png?v10');
   background-position: -300px -262px;
   width: 32px;
   height: 22px;
 }
-

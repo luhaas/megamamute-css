@@ -1,13 +1,11 @@
-.grid-content {
-	display: grid;
-	grid-template-columns: 260px 1fr;
-	grid-gap: 40px;
-}
 #left {
 	width: 260px;
 	padding: 0;
 	margin: 0;
 	.wd-facet-group {
+		.selected-facets {
+			display: none !important;
+		}
 		.facets {
 			background: #fff;
 			border: 0;
@@ -46,9 +44,9 @@
 						}
 					}
 					h4 a {
-						color: #979797;
+						color: $gray-97;
 						.option-title, .option-count {
-							color: #979797;
+							color: $gray-97;
 						}
 						&:hover {
 							color: $color-primary-orange;
@@ -82,14 +80,14 @@
 						}
 					}
 					.defined-range {
-						background: #979797;
+						background: $gray-97;
 					}
 					.range2h {
 						.min-text, .max-text {
 							bottom: initial;
 							top: -30px;
 							font-size: $font-size;
-							color: #979797;
+							color: $gray-97;
 						}
 					}
 					.submit {
