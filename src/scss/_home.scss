@@ -167,6 +167,9 @@
 				i {
 					font-size: 30px;
 				}
+				&.inactive i {
+					color: #989898;
+				}
 			}
 			.jcarousel-control-prev {
 				left: 0;

@@ -98,6 +98,12 @@
 			&:hover {
 				color: $color-dark-orange;
 			}
+		}		
+		&.inactive i {
+			color: #989898;
+			&:hover {
+				color: #989898;
+			}
 		}
 	}
 }

@@ -171,6 +171,9 @@
 				color: $white;
 				font-size: 19px;
 				line-height: 60px;
+			}			
+			&.inactive i {
+				color: #989898;
 			}
 			&:hover {
 				text-decoration: none;
