@@ -184,63 +184,6 @@
 		h2 {
 			font-size: 40px;
 		}
-		.produto-detaque {
-			padding: 0 25px 30px 25px;
-			border: 2px solid $color-primary-blue;
-			@include round();
-			.wd-icon {
-				display: none;
-			}
-			.wd-title {
-				text-align: center;
-				font-size: 30px;
-				font-family: $font-decima;
-				color: $color-primary-blue;
-				display: flex;
-				align-items: center;
-				flex-direction: column;
-				big {
-					font-size: 52px;
-					font-family: $font-decima-heavy;
-				}
-				&:before {
-					content: '';
-					@extend .icon;
-					margin-bottom: 20px;
-				}
-			}
-			&.laptop {
-				.wd-title {
-					&:before {
-						@extend .icon-vitrine-laptop;
-					}
-				}
-			}
-			&.home {
-				border-color: $color-primary-orange;
-				.wd-title {
-					color: $color-primary-orange;
-					&:before {
-						@extend .icon-vitrine-home;
-					}
-				}
-			}
-			.wd-content {
-				overflow: hidden;
-			}
-			.wd-product-list .wd-product-list li {
-				width: 500px;
-				margin-left: 5px;
-				margin-right: 5px;
-				.wd-product-line {
-					display: flex;
-					.item-head {
-						border-bottom: 0;
-						border-right: 1px solid #D9D9D9;
-					}
-				}
-			}
-		}
 	}
 	> div {
 		clear: both;

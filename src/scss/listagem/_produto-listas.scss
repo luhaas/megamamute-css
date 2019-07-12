@@ -11,22 +11,24 @@
 	}
 }
 .wd-browsing-product-carousel {
-	.wd-product-list {
-		overflow: hidden;
+	.wd-content {
 		.wd-product-list {
-			height: auto;
-			li {
-				width: 263px;
-				margin: 15px 0 35px 30px;
+			overflow: hidden;
+			.wd-product-list {
+				height: auto !important;
+				li {
+					width: 263px;
+					margin: 15px 0 35px 30px;
+				}
 			}
 		}
-	}
-	.jcarousel-control-next, .jcarousel-control-prev {
-		background: transparent;
-    top: 50%;
-    transform: translateY(-50%);
-		i {
-			font-size: 30px;
+		.jcarousel-control-next, .jcarousel-control-prev {
+			background: transparent;
+			top: 50%;
+			transform: translateY(-50%);
+			i {
+				font-size: 30px;
+			}
 		}
 	}
 	.wd-footer {
@@ -184,6 +186,100 @@
 		}
 		.jcarousel-control-next {
 			@include round-right(100%);
+		}
+	}
+}
+
+.HomeRoute .novidades {
+	.produto-detaque {
+		padding: 0 25px 30px 25px;
+		border: 2px solid $color-primary-blue;
+		@include round();
+		.wd-icon {
+			display: none;
+		}
+		.wd-title {
+			text-align: center;
+			font-size: 30px;
+			font-family: $font-decima;
+			color: $color-primary-blue;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			big {
+				font-size: 52px;
+				font-family: $font-decima-heavy;
+			}
+			&:before {
+				content: '';
+				@extend .icon;
+				margin-bottom: 20px;
+			}
+		}
+		&.laptop {
+			.wd-title {
+				&:before {
+					@extend .icon-vitrine-laptop !optional;
+				}
+			}
+		}
+		&.home {
+			border-color: $color-primary-orange;
+			.wd-title {
+				color: $color-primary-orange;
+				&:before {
+					@extend .icon-vitrine-home !optional;
+				}
+			}
+		}
+		.wd-content {
+			overflow: hidden;
+			.control {
+				position: relative;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				.jcarousel-control-prev, .jcarousel-control-next {
+					position: initial;
+					width: 10px;
+					height: 18px;
+					font-size: 17px;
+					transform: none;
+					margin: 0 10px;
+					i {
+						font-size: 17px;
+					}
+				}
+				.jcarousel-pagination {
+					a {
+						display: block;
+						float: left;
+						font-size: 0;
+						border: 1px solid $color-primary-blue;
+						width: 11px;
+						height: 11px;
+						margin: 0 10px;
+						@include round(1px);
+						&.current {
+							background: $color-primary-orange;
+							border-color: $color-primary-orange;
+						}
+					}
+				}
+			}
+		}
+		.wd-product-list .wd-product-list li {
+			width: 506px;
+			margin-left: 5px;
+			margin-right: 5px;
+			.wd-product-line {
+				display: flex;
+				@include shadow(0, 2px, 4px);
+				.item-head {
+					border-bottom: 0;
+					border-right: 1px solid #D9D9D9;
+				}
+			}
 		}
 	}
 }
