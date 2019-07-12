@@ -121,6 +121,58 @@
 	}
 }
 
+
+.HomeRoute .mega-oferta {
+	padding: 20px 0;
+	background-image: url('/Custom/Content/Themes/#{$theme-path}/Imagens/megaoferta-bg.png');
+	background-repeat: no-repeat;
+	background-position: top center;
+	.wd-widget.wd-browsing-product-carousel {
+		margin: 0;
+		padding: 0 31px;
+		.wd-header .wd-title {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-family: $font-decima-heavy;
+			color: $white;
+			&:before {
+				content: '';
+				@extend .icon;
+				@extend .icon-forward-right !optional;
+				margin-right: 30px;
+			}
+			&:after {
+				content: '';
+				@extend .icon;
+				@extend .icon-forward-left !optional;
+				margin-left: 30px;
+			}
+		}
+		.jcarousel-control-next, .jcarousel-control-prev {
+			i {
+				color: $white;
+			}
+		}
+		.wd-content {
+			.wd-product-list {
+				ul {					
+					display: flex;
+					align-items: center;
+					li {
+						zoom: 93%;
+						filter: blur(2px);
+						&.current {
+							zoom: 100%;
+							filter: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 .category-route .mega-oferta {
 	padding: 60px 0 20px;
 	background-image: url('/Custom/Content/Themes/#{$theme-path}/Imagens/bg-megaoferta-categoria.png');
