@@ -2,6 +2,95 @@
 	width: 260px;
 	padding: 0;
 	margin: 0;
+	.wd-category-menu {
+		.wd-header {
+			display: none;
+		}
+		.level-1 {
+			li {
+				margin: 0;
+				h3, h4 {
+					margin: 0;
+				}
+				h4 .icon {
+					width: 25px;
+				}
+			}
+			> li {
+				&:not(.selected) {
+					display: none;
+				}
+				h3 {
+					a {
+						display: block;
+						font-family: $font-decima-heavy;
+						font-size: 24px;
+						line-height: 53px;
+						text-transform: uppercase;
+					}
+				}
+				ul {
+					display: none;
+				}
+				> ul {
+					display: block;
+				}
+				> ul > li {
+					> h4 {
+						padding: 10px 0;
+						a {
+							overflow: hidden;
+							font-family: $font-extrabold;
+							font-size: 18px;
+							color: $color-primary-blue;										
+							&:hover {
+								color: $color-primary-orange;
+							}
+						}
+					}
+					&.has-children {
+						> h4 {
+							.icon::before {
+								@include aws-icon("\f068");
+								color: $color-primary-orange;
+								margin-right: 10px;
+								position: initial;
+								width: auto;
+								border: 0;
+								cursor: pointer;
+							}
+						}
+						&:not(.active) {
+							> h4 .icon::before {
+								@include aws-icon("\f067");
+							}
+						}
+						&.active {							
+							border-top: 1px solid #D9D9D9;
+							border-bottom: 1px solid #D9D9D9;
+						}
+						li {
+							a {
+								font-size: 14px;
+								color: $gray-97;
+								line-height: 30px;
+								&:hover {
+									color: $color-light-orange;
+									text-decoration: none;
+								}
+							}
+						}
+					}
+					&.active {
+						> ul {
+							display: block;
+						}
+					}
+					
+				}
+			}
+		}
+	}
 	.wd-facet-group {
 		.selected-facets {
 			display: none !important;
@@ -15,7 +104,7 @@
 				.facet-title {
 					overflow: hidden;
 					padding: 15px 0;
-					border-color: #D9D9D9;
+					border-top: 1px solid #D9D9D9 !important;
 					font-family: $font-extrabold;
 					font-size: 18px;
 					color: $color-primary-blue;
