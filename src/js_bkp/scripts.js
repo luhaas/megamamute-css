@@ -71,12 +71,19 @@ $(document).ready(function(){
 	});
 	
 	
-	// atualiza o hamburguer quando cliente se loga
+	// atualiza o hamburguer e a mensagem de boas vindas quando cliente se loga
 	if(browsingContext.Common.ready){
 		if (browsingContext.Common.Shopper.IsAuthenticated) {
+			$('.welcome-shopper .text-hello').html('Olá, '+ browsingContext.Common.Shopper.Name);
+			$('.welcome-shopper .authenticated').removeClass('hide');
+			$('.welcome-shopper .unauthenticated').addClass('hide');
+			
 			$('.hamburguer .autenticated').removeClass('hide');
 			$('.hamburguer .unautenticated').addClass('hide');
-		} 
+		} else {
+			$('.welcome-shopper .authenticated').addClass('hide');
+			$('.welcome-shopper .unauthenticated').removeClass('hide');
+		}
 	}
 	
 	// CATEGORY ROUTE
@@ -85,7 +92,6 @@ $(document).ready(function(){
 	$('body.category-route #full-description .wd-marketing-banner').closest('#full-description').addClass('hasBanner');
 	$('body.category-route .page-description:not(.hasBanner)').closest('#middle').addClass('wrapper');
 	$('body.category-route .page-description:not(.hasBanner)').closest('#middle').prepend($('.wd-browsing-breadcrumbs'));
-	
 	
 	// seleciona exibicao de 3 ou 4 produtos no grid
 	$('body').on('click', '.select-grid > div', function(){
@@ -114,6 +120,6 @@ $(document).ready(function(){
 	$(".close-icon .close-hamburguer").on("click", function(){
 	$("body").removeClass("menu-opened");
 	$(".hamburguer").removeClass("active");
-		$(".hamburguer").addClass('fechado');
+	$(".hamburguer").addClass('fechado');
 });
 });
