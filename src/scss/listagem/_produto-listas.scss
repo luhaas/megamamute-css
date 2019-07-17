@@ -12,13 +12,15 @@
 }
 .wd-browsing-product-carousel {
 	.wd-content {
+		padding: 0 15px;
 		.wd-product-list {
 			overflow: hidden;
 			.wd-product-list {
 				height: auto !important;
 				li {
 					width: 263px;
-					margin: 15px 0 35px 30px;
+					margin: 15px;
+					margin-bottom: 35px;
 				}
 			}
 		}
@@ -29,6 +31,15 @@
 			i {
 				font-size: 30px;
 			}
+			&.inactive {
+				color: #989898;
+			}
+		}
+		.jcarousel-control-prev {
+			left: -15px;
+		}
+		.jcarousel-control-next {
+			right: -15px;
 		}
 	}
 	.wd-footer {
@@ -225,18 +236,17 @@
 				color: $white;
 				font-size: 19px;
 				line-height: 60px;
-			}			
-			&.inactive i {
-				color: #989898;
 			}
 			&:hover {
 				text-decoration: none;
 			}
 		}
 		.jcarousel-control-prev {
+			left: 0;
 			@include round-left(100%);
 		}
 		.jcarousel-control-next {
+			right: 0;
 			@include round-right(100%);
 		}
 	}
@@ -286,6 +296,7 @@
 		}
 		.wd-content {
 			overflow: hidden;
+			padding: 0;
 			.control {
 				position: relative;
 				display: flex;

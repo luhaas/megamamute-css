@@ -148,9 +148,20 @@
 							.asyncprice-area {
 								margin: 0;
 								.sale-price {
+									text-align: center;
+									.prefix {
+										font-size: 0;
+										&:before {
+											content: 'Por apenas:';
+											font-size: $font-size;
+											font-family: $font-bold;
+											font-size: 16px;
+										}
+									}
 									span {
-										color: $font-black;
-										font-size: 24px;
+										display: block;
+										color: $color-green;
+										font-size: 36px;
 										padding-left: 5px;
 									}
 								}

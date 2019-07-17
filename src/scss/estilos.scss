@@ -13,7 +13,9 @@
 
 
 @import 'flags';
-@import 'home';
+
+// ARQUIVO A PARTE
+// @import 'home';
 
 @import 'widgets/general-widgets';
 
@@ -27,14 +29,15 @@
 
 @import 'preco';
 
-
-@import 'listagem/_facetas';
+// ARQUIVO A PARTE
+// @import 'listagem/_facetas';
 @import 'listagem/_produto-listas';
 @import 'listagem/_produto-linha';
-@import 'listagem/_produto-grid';
+// @import 'listagem/_produto-grid';
 
-@import 'produto/_produto-detalhe';
-@import 'produto/associacoes';
+// ARQUIVO A PARTE
+// @import 'produto/_produto-detalhe';
+// @import 'produto/associacoes';
 
 @import 'carrinho/carrinho';
 @import 'carrinho/desconto-progressivo';
