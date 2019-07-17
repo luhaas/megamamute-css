@@ -1,5 +1,5 @@
 # Tema Base - Plataforma Core
-Projeto com arquivos Scss para estilização da loja Bernal criado a partir do tema base da plataforma Core.
+Projeto com arquivos Scss para estilização da loja Megamamute criado a partir do tema base da plataforma Core.
 
 ## Recursos Necessários
 - **[Git](https://git-scm.com/downloads)**
