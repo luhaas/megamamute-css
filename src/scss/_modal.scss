@@ -1,5 +1,15 @@
 .the-modal {
 	max-width: 300px;
+	.close {
+		width: 30px;
+		line-height: 1em;
+		font-size: 0;
+		&:before {
+			@include aws-icon('\f00d');
+			font-size: 20px;
+    	line-height: 30px;
+		}
+	}
 	.the-modal-container {
 		background: $white;
 	    height: 100%;
