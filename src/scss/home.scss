@@ -24,16 +24,16 @@
 			.wd-header {
 				padding: 35px 0 30px 45px;
 				margin: 0;
-			}
-			.wd-icon {
-				position: absolute;
-				left: 0;
-				top: 50%;
-				transform: translateY(-50%);
-				z-index: -1;
-				&:before {
-					content: '';
-					@extend .icon;
+				> .wd-icon {
+					position: absolute;
+					left: 0;
+					top: 50%;
+					transform: translateY(-50%);
+					z-index: -1;
+					&:before {
+						content: '';
+						@extend .icon;
+					}
 				}
 			}
 		}

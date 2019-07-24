@@ -30,19 +30,31 @@
 				font-family: $font-decima-bold;
 				text-transform: uppercase;
 				font-size: 18px;
+				height: 42px;
 				color: $white;
 				background-color: $color-primary-orange; 
-				padding: 5px 10px;
+				padding: 0 19px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
 				@include round();
+				&:hover {
+					text-decoration: none;
+					background-color: $color-dark-orange;
+				}
 				.wd-icon {
-					float: right;
-					line-height: 18px;
+					order: 2;
+					line-height: 13px;
 					&:after {
 						@include aws-icon("\f054");
-						font-size: 11px;
+						font-size: 13px;
 						color: $white;
 						margin-left: 5px;
 					}
+				}
+				.text {
+					position: relative;
+					top: 1.5px;
 				}
 			}
 		}
