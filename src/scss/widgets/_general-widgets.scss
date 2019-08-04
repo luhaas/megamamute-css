@@ -101,13 +101,17 @@
 		&:last-child {
 			border: 0;
 		}
+		img {
+			display: block;
+		}
 	}
 	.jcarousel-control-prev, .jcarousel-control-next {
 		top: 50%;
 		transform: translateY(-50%);
 		font-size: 20px;
     line-height: 1em;
-    height: auto;
+		height: auto;
+		width: auto;
 		i {
 			color: $color-primary-orange;
 			font-size: 20px;
