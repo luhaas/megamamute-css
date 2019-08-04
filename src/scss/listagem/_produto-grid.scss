@@ -8,12 +8,26 @@
 			text-transform: uppercase;
 			margin: 0;			
 		}
-		.wd-marketing-banner .banner-wrapper img, .wd-marketing-banner a img {
-			width: auto;
-			height: auto;
+		.wd-marketing-banner .banner-wrapper {
 			position: relative;
-			left: 50%;
-			transform: translateX(-50%);
+			// &:after {
+			// 	content: '';
+			// 	width: calc(((100% - #{$wrapper}) / 2) + 450px);
+			// 	display: block;
+			// 	background-color: rgba(0, 0, 0, 0.8);
+			// 	height: 100%;
+			// 	position: absolute;
+			// 	top: 0;
+			// 	left: 0;
+			// 	z-index: 2;
+			// }
+			img {
+				width: auto;
+				height: auto;
+				position: relative;
+				left: 50%;
+				transform: translateX(-50%);
+			}
 		}
 		.see-more {
 			font-family: $font-decima-bold;
@@ -46,8 +60,8 @@
 				position: absolute;
 				top: 0;
 				width: 395px;
-				padding: 50px 0;
-				left: calc(#{$wrapper} - 325px);
+				padding: 50px 0;				
+				right: calc((100% - #{$wrapper}) / 2);
 				z-index: 2;
 				.description {
 					display: block;

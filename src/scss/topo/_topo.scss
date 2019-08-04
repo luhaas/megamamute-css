@@ -1,181 +1,214 @@
 header {
-	.top-bar {
-		background-color: $color-primary-navy;
-		padding: 0;
+	.header-height {
+		height: 241px;
 	}
-	.top-list {
-		text-align: right;
-		.item {
-			position: relative;
-			cursor: pointer;
-			.title {
-				display: flex;
-				align-items: center;
-				color: $white;
-				padding: 0 15px;
-				margin: 15px 0;
-				i {
-					margin-right: 5px;
-				}
-				a {
+	.header-content {		
+		position: fixed;
+		top: 0;
+		z-index: 55;
+		width: 100%;	
+		height: 241px;
+		-webkit-transition: height .4s ease;
+		transition: height .4s ease;
+		@include shadow();
+		.top-bar {
+			background-color: $color-primary-navy;
+			padding: 0;
+		}
+		.top-list {
+			text-align: right;
+			.item {
+				position: relative;
+				cursor: pointer;
+				.title {
+					display: flex;
+					align-items: center;
 					color: $white;
-				}
-				span {
+					padding: 0 15px;
+					margin: 15px 0;
 					i {
-						margin-right: 0;
-						margin-left: 5px;
-					}
-				}
-			}
-			.dropdown {
-				display: none;
-				position: absolute;
-				width: 100%;
-				padding: 15px 25px;
-				background-color: $white;
-				text-align: left;
-				font-size: 15px;
-				@include shadow();
-				@include round-bottom(5px);
-				z-index: 2;
-				li {
-					&.root {
-						margin: 0;
-						> a {
-							display: none;
-						}
+						margin-right: 5px;
 					}
 					a {
-						color: $color-secondary-blue;
-						&:hover {
-							color: $color-primary-orange;
+						color: $white;
+					}
+					span {
+						i {
+							margin-right: 0;
+							margin-left: 5px;
 						}
 					}
-				}				
-			}
-			&.duvidas {
-				.title {
-					border-right: 1px solid $color-light-blue;
 				}
-			}
-			&.troca {
-				background-color: $color-secondary-blue;
-				.title {
-					font-family: $font-semibold;
-					color: $color-primary-navy;
-				}
-			}
-			&:hover {
 				.dropdown {
-					display: block;
+					display: none;
+					position: absolute;
+					width: 100%;
+					padding: 15px 25px;
+					background-color: $white;
+					text-align: left;
+					font-size: 15px;
+					@include shadow();
+					@include round-bottom(5px);
+					z-index: 2;
+					li {
+						&.root {
+							margin: 0;
+							> a {
+								display: none;
+							}
+						}
+						a {
+							color: $color-secondary-blue;
+							&:hover {
+								color: $color-primary-orange;
+							}
+						}
+					}				
+				}
+				&.duvidas {
+					.title {
+						border-right: 1px solid $color-light-blue;
+					}
+				}
+				&.troca {
+					background-color: $color-secondary-blue;
+					.title {
+						font-family: $font-semibold;
+						color: $color-primary-navy;
+					}
+				}
+				&:hover {
+					.dropdown {
+						display: block;
+					}
 				}
 			}
-		}
-	}
-
-	&.flutuante {
-		.top-bar {
-			margin-bottom: 82px;
 		}
 		.main-bar {
-			position: fixed;
-			top: 0;
-			z-index: 55;
-		    width: 100%;
-		    box-shadow: 1px 1px 1px 1px $gray-semilight;
-		}
-	}
-	.main-bar {
-		padding: 20px 0;
-		background: $white;
-		&.simples {
-		    box-shadow: 1px 1px 1px 1px $gray-semilight;
-		}
-		.welcome-shopper {
-			.icon {
-				margin-right: 10px;
-			}
-			.content {
-				.text-hello {
-					font-size: 16px;
+			padding: 20px 0;
+			background: $white;
+			-webkit-transition: all .3s ease;
+			transition: all .3s ease;
+			.welcome-shopper {
+				.icon {
+					margin-right: 10px;
 				}
-				.actions {
-					color: $gray-dark;
-					a {
+				.content {
+					.text-hello {
+						font-size: 16px;
+					}
+					.actions {
 						color: $gray-dark;
-						text-decoration: underline;
-						&:hover {
-							color: mix($gray-dark, black, 80%);
+						a {
+							color: $gray-dark;
+							text-decoration: underline;
+							&:hover {
+								color: mix($gray-dark, black, 80%);
+							}
 						}
 					}
 				}
 			}
-		}
-		.wd-profile-welcome-shopper {
-			position: relative;
-			line-height: 30px;
-			&:hover {
-				.widget-content {
-					display: block;
-				}
-			}
-			i.fa-user {
-				font-size: 24px;
-    			padding-right: 5px;
-    			color: $base-color;
-			}
-			.widget-title {
-			line-height: 45px;				
-				.title {
-					color: $font-dark;
-					cursor: pointer;
-					display: inline-block;
-					span, i {
-						color: $base-color;
+			.wd-profile-welcome-shopper {
+				position: relative;
+				line-height: 30px;
+				&:hover {
+					.widget-content {
+						display: block;
 					}
 				}
+				i.fa-user {
+					font-size: 24px;
+						padding-right: 5px;
+						color: $base-color;
+				}
+				.widget-title {
+				line-height: 45px;				
+					.title {
+						color: $font-dark;
+						cursor: pointer;
+						display: inline-block;
+						span, i {
+							color: $base-color;
+						}
+					}
+				}
+				.widget-content {
+					display: none;
+						position: absolute;
+						left: 0px;
+						top: 30px;
+						min-height: 100px;
+						width: 150px;
+						padding: 15px;
+						box-sizing: border-box;
+						border: 1px solid $gray-light;
+						background: #fff;
+						overflow: visible;
+						z-index: 2;
+						.login-wrapper, .new-account {
+							display: block;
+							text-align: center;
+						}
+						.wd-profile-login {
+							display: none !important;
+						}
+						.login-title {
+							background-color: $btn-buy;
+							color: $white;
+							margin-bottom: 10px;
+							@include round(2px);
+						}
+						.shopper-authenticated {
+							a {
+								line-height: auto;
+								display: block;
+								&.put-pipe {
+									padding: 0;
+									&:before {
+										display: none;
+									}
+									b {
+										font-weight: normal;
+									}
+								}
+							}
+						}
+				}
 			}
-			.widget-content {
-				display: none;
-			    position: absolute;
-			    left: 0px;
-			    top: 30px;
-			    min-height: 100px;
-			    width: 150px;
-			    padding: 15px;
-			    box-sizing: border-box;
-			    border: 1px solid $gray-light;
-			    background: #fff;
-			    overflow: visible;
-			    z-index: 2;
-			    .login-wrapper, .new-account {
-			    	display: block;
-			    	text-align: center;
-			    }
-			    .wd-profile-login {
-		    		display: none !important;
-		    	}
-		    	.login-title {
-		    		background-color: $btn-buy;
-		    		color: $white;
-		    		margin-bottom: 10px;
-		    		@include round(2px);
-		    	}
-		    	.shopper-authenticated {
-		    		a {
-		    			line-height: auto;
-		    			display: block;
-		    			&.put-pipe {
-		    				padding: 0;
-		    				&:before {
-		    					display: none;
-		    				}
-		    				b {
-		    					font-weight: normal;
-		    				}
-		    			}
-		    		}
-		    	}
+		}
+
+		.top-bar, .category-bar, .main-bar {
+			position: relative;
+			top: 0;
+			-webkit-transition: top .5s ease;
+			transition: top .5s ease;
+			opacity: 1;
+			visibility: visible;
+		}
+		.category-bar {
+			-webkit-transition: opacity .5s ;
+			transition: opacity .5s ease;
+		}
+		&.scrolling {			
+			height: 194px;
+			.main-bar {
+				top: -47px;
+			}
+			.top-bar {
+				opacity: 0;
+				top: -47px;
+				visibility: hidden;
+			}
+			.category-bar {
+				top: -47px;
+			}
+			&:not(.scrolling-top) {
+				height: 124px;
+				.category-bar {
+					opacity: 0;
+					visibility: hidden;
+				}
 			}
 		}
 	}

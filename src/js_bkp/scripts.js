@@ -23,15 +23,12 @@ $(document).ready(function(){
 		$('#overlay').toggleClass('hide');
 	});
 	// manipula overlay
-	$('.category-bar')
+	$('.category-bar .all-category, .category-bar .main-category .level-1 > .has-children')
 	.on('mouseover', function(){
 		$('#overlay').removeClass('hide');
 	})
 	.on('mouseout', function(){
 		$('#overlay').addClass('hide');
-	});
-	$('header .hamburguer > .icon').on('click', function() {
-		$('#overlay').toggleClass('hide');
 	});
 	
 	// Adiciona seta ao banner
@@ -100,15 +97,23 @@ $(document).ready(function(){
 	});
 	
 	// trigger para abrir menu e detalhe do produto flutuantes
+	var startPosition = 0;
 	$(window).trigger("scroll").scroll(function () {
-		var $windows = $(this),
-			$body = $("body");
-		if($windows.scrollTop() >= 200){
-			$('body:not(.area-profile,.BasketIndexRoute) #header').addClass('flutuante');
-			$('.produto-flutuante').removeClass('hide');
-		}else{
-			$('body:not(.area-profile,.BasketIndexRoute) #header').removeClass('flutuante');
-			$('.produto-flutuante').addClass('hide');
+		var $window = $(this),
+			$body = $("body:not(.area-profile,.BasketIndexRoute) #header .header-content");
+		
+		var $position = $window.scrollTop();
+		if ($position >= 100){
+			$body.addClass('scrolling');
+			if ($position <= startPosition) {
+				$body.addClass('scrolling-top');
+			} else {
+				$body.removeClass('scrolling-top');
+			}
+			startPosition = $position;
+		} else {
+			$body.removeClass('scrolling');
+			$body.removeClass('scrolling-top');
 		}
 	});
 	
