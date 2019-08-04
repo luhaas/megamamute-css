@@ -1,5 +1,5 @@
 # Tema Base - Plataforma Core
-Neste projeto você irá encontrar as folhas de estilo para estilizar sua loja a partir do tema Base da plataforma Core.
+Projeto com arquivos Scss para estilização da loja Megamamute criado a partir do tema base da plataforma Core.
 
 ## Recursos Necessários
 - **[Git](https://git-scm.com/downloads)**
@@ -91,7 +91,3 @@ A imagem *sprite.png* é gerada no diretório */img*, já o arquivo *sprite.scss
 
 Todas as configurações deste plugin podem ser gerenciadas no arquivo *gulpfile.js*, inclusive pode-se optar por gerar uma arquivo scss ao invés de css.
 
-OBS: neste projeto foram utilizados apenas ícones do FontAwesome, por isso originalmente não existe o diretório */img*
-
-## Dúvidas?
-Entre em contato conosco! Envie suas dúvidas para o e-mail [agencia@dcg.com.br](mailto:agencia@dcg.com.br), teremos prazer em auxiliá-lo :)
